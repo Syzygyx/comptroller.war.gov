@@ -58,17 +58,21 @@ jobs:
     
     - name: Process PDFs with OCR
       env:
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        LLM_PROVIDER: openrouter
       run: |
         python src/main.py --no-validate
       continue-on-error: true
     
     - name: Validate with LLM (if API key available)
-      if: ${{ secrets.OPENAI_API_KEY != '' || secrets.ANTHROPIC_API_KEY != '' }}
+      if: ${{ secrets.OPENROUTER_API_KEY != '' || secrets.OPENAI_API_KEY != '' || secrets.ANTHROPIC_API_KEY != '' }}
       env:
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        LLM_PROVIDER: openrouter
       run: |
         python src/main.py --process-only
       continue-on-error: true

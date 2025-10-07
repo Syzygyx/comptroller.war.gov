@@ -21,10 +21,10 @@ def load_config() -> Dict[str, Any]:
     """Load configuration from environment"""
     return {
         'ocr_engine': os.getenv('OCR_ENGINE', 'tesseract'),
-        'llm_provider': os.getenv('LLM_PROVIDER', 'openai'),
+        'llm_provider': os.getenv('LLM_PROVIDER', 'openrouter'),
         'llm_model': os.getenv('LLM_MODEL'),
         'max_downloads': int(os.getenv('MAX_CONCURRENT_DOWNLOADS', '10')),
-        'validate_with_llm': os.getenv('ANTHROPIC_API_KEY') or os.getenv('OPENAI_API_KEY'),
+        'validate_with_llm': os.getenv('OPENROUTER_API_KEY') or os.getenv('ANTHROPIC_API_KEY') or os.getenv('OPENAI_API_KEY'),
     }
 
 

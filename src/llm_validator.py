@@ -24,6 +24,8 @@ try:
 except ImportError:
     ANTHROPIC_AVAILABLE = False
 
+OPENROUTER_AVAILABLE = OPENAI_AVAILABLE  # OpenRouter uses OpenAI SDK
+
 
 class LLMValidator:
     """Validates CSV data accuracy using LLM"""
@@ -33,7 +35,7 @@ class LLMValidator:
         Initialize LLM validator
         
         Args:
-            provider: 'openai' or 'anthropic'
+            provider: 'openai', 'anthropic', or 'openrouter'
             model: Model name (optional, uses defaults)
         """
         self.provider = provider.lower()
@@ -46,6 +48,18 @@ class LLMValidator:
                 raise ValueError("OPENAI_API_KEY not set")
             self.client = OpenAI(api_key=api_key)
             self.model = model or 'gpt-4-turbo-preview'
+            
+        elif self.provider == 'openrouter':
+            if not OPENROUTER_AVAILABLE:
+                raise ImportError("OpenAI library not installed. Run: pip install openai")
+            api_key = os.getenv('OPENROUTER_API_KEY')
+            if not api_key:
+                raise ValueError("OPENROUTER_API_KEY not set")
+            self.client = OpenAI(
+                api_key=api_key,
+                base_url="https://openrouter.ai/api/v1"
+            )
+            self.model = model or 'anthropic/claude-3.5-sonnet'
             
         elif self.provider == 'anthropic':
             if not ANTHROPIC_AVAILABLE:
@@ -87,7 +101,7 @@ class LLMValidator:
     
     def _call_llm(self, prompt: str) -> str:
         """Call configured LLM"""
-        if self.provider == 'openai':
+        if self.provider in ['openai', 'openrouter']:
             return self._call_openai(prompt)
         else:
             return self._call_anthropic(prompt)
