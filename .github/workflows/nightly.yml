@@ -1,0 +1,140 @@
+name: Nightly Data Update
+
+on:
+  schedule:
+    # Run at 2 AM UTC every day
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # Allow manual trigger
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'requirements.txt'
+      - '.github/workflows/**'
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y tesseract-ocr poppler-utils
+    
+    - name: Install Python dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Create data directories
+      run: |
+        mkdir -p data/pdfs
+        mkdir -p data/csv
+        mkdir -p data/validation
+        mkdir -p docs/data
+    
+    - name: Download new PDFs
+      run: |
+        python src/download_pdfs.py --max 5
+      continue-on-error: true
+    
+    - name: Process PDFs with OCR
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      run: |
+        python src/main.py --no-validate
+      continue-on-error: true
+    
+    - name: Validate with LLM (if API key available)
+      if: ${{ secrets.OPENAI_API_KEY != '' || secrets.ANTHROPIC_API_KEY != '' }}
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      run: |
+        python src/main.py --process-only
+      continue-on-error: true
+    
+    - name: Copy data to docs folder for GitHub Pages
+      run: |
+        # Copy CSV files
+        cp -r data/csv/* docs/data/ 2>/dev/null || true
+        
+        # Copy metadata
+        cp data/metadata.json docs/data/ 2>/dev/null || true
+        
+        # Copy validation reports
+        cp data/validation/validation_summary.json docs/data/ 2>/dev/null || true
+    
+    - name: Update GitHub Pages timestamp
+      run: |
+        echo "const lastUpdated = '$(date -u +"%Y-%m-%d %H:%M:%S UTC")';" > docs/last-updated.js
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        git add data/ docs/
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Automated data update: $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+          git push
+        fi
+    
+    - name: Upload artifact for GitHub Pages
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: 'docs'
+    
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
+      id: deployment
+    
+    - name: Report summary
+      run: |
+        echo "## Pipeline Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ -f data/metadata.json ]; then
+          TOTAL_FILES=$(jq '.total_files // 0' data/metadata.json)
+          echo "- Total PDFs: $TOTAL_FILES" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ -d data/csv ]; then
+          CSV_COUNT=$(find data/csv -name "*.csv" | wc -l)
+          echo "- CSV files generated: $CSV_COUNT" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ -f data/validation/validation_summary.json ]; then
+          PASSED=$(jq '.passed // 0' data/validation/validation_summary.json)
+          FAILED=$(jq '.failed // 0' data/validation/validation_summary.json)
+          AVG_SCORE=$(jq '.average_score // 0' data/validation/validation_summary.json)
+          echo "- Validation passed: $PASSED" >> $GITHUB_STEP_SUMMARY
+          echo "- Validation failed: $FAILED" >> $GITHUB_STEP_SUMMARY
+          echo "- Average accuracy: ${AVG_SCORE}%" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "🌐 [View Results](https://yourusername.github.io/comptroller.war.gov)" >> $GITHUB_STEP_SUMMARY

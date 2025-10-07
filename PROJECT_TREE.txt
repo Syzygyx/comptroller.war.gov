@@ -1,0 +1,38 @@
+comptroller.war.gov/
+├── README.md                    # Main documentation
+├── QUICKSTART.md               # 5-minute setup guide
+├── DEPLOYMENT.md               # Production deployment guide
+├── CONTRIBUTING.md             # Contribution guidelines
+├── PROJECT_OVERVIEW.md         # Comprehensive project overview
+├── IMPLEMENTATION_SUMMARY.md   # What was built
+├── LICENSE                     # MIT License
+├── .gitignore                  # Git ignore rules
+├── .env.example               # Environment variables template
+├── requirements.txt           # Python dependencies
+├── setup.sh                   # Automated setup script
+│
+├── .github/
+│   └── workflows/
+│       └── nightly.yml        # GitHub Actions workflow
+│
+├── src/                       # Python source code
+│   ├── __init__.py
+│   ├── main.py                # Main orchestration script
+│   ├── download_pdfs.py       # PDF scraper
+│   ├── ocr_processor.py       # OCR processing
+│   ├── csv_transformer.py     # CSV transformation
+│   └── llm_validator.py       # LLM validation
+│
+├── docs/                      # GitHub Pages site
+│   ├── index.html             # Dashboard
+│   ├── browse.html            # Data browser
+│   ├── progress.html          # Processing log
+│   ├── last-updated.js        # Timestamp (auto-updated)
+│   └── data/                  # CSV files (auto-populated)
+│       └── .gitkeep
+│
+└── data/                      # Local data (not committed)
+    ├── pdfs/                  # Downloaded PDFs
+    ├── csv/                   # Generated CSV files
+    ├── validation/            # Validation reports
+    └── metadata.json          # Processing metadata
