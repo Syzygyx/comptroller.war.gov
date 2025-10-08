@@ -182,7 +182,8 @@
             <a href="index.html">Dashboard</a>
             <a href="browse.html" class="active">Browse Data</a>
             <a href="progress.html">Processing Log</a>
-            <a href="https://github.com/yourusername/comptroller.war.gov" target="_blank">GitHub</a>
+            <a href="chat.html">Chat</a>
+            <a href="sankey.html">Budget Flow</a>
         </nav>
 
         <div class="content">
@@ -241,7 +242,22 @@
 
         async function loadAllCSVFiles() {
             try {
-                // Load metadata to find CSV files
+                // First try to load budget_data.csv (consolidated budget data)
+                try {
+                    const budgetResponse = await fetch('data/budget_data.csv');
+                    if (budgetResponse.ok) {
+                        const csvText = await budgetResponse.text();
+                        allData = parseCSV(csvText);
+                        console.log(`Loaded ${allData.length} budget lines from budget_data.csv`);
+                        filteredData = allData;
+                        displayData(filteredData);
+                        return;
+                    }
+                } catch (e) {
+                    console.log('budget_data.csv not found, trying individual files...');
+                }
+                
+                // Fallback: Load metadata to find CSV files
                 const metadataResponse = await fetch('data/metadata.json');
                 const metadata = await metadataResponse.json();
                 
@@ -308,9 +324,10 @@
                         <tr>
                             <th>Branch</th>
                             <th>Category</th>
-                            <th>Budget Title</th>
+                            <th>Budget Activity</th>
                             <th>Fiscal Year</th>
                             <th>Amount ($000s)</th>
+                            <th>Direction</th>
                             <th>Explanation</th>
                             <th>Source</th>
                         </tr>
@@ -320,18 +337,27 @@
             
             data.forEach(row => {
                 const fy = row.fiscal_year_start && row.fiscal_year_end ? 
-                    `${row.fiscal_year_start}-${row.fiscal_year_end}` : '-';
-                const amount = row.reprogramming_amount || '-';
+                    `${row.fiscal_year_start}-${row.fiscal_year_end}` : 
+                    (row.fiscal_year || '-');
+                
+                const amount = row.reprogramming_amount || row.budget_amount || '-';
+                const direction = row.direction || '-';
+                const budget_activity = row.budget_activity_title || row.program_element || '-';
                 const explanation = (row.explanation || '').substring(0, 150);
                 const filename = row.file || '';
+                
+                // Format amount with commas
+                const formattedAmount = typeof amount === 'number' ? 
+                    amount.toLocaleString() : amount;
                 
                 html += `
                     <tr>
                         <td>${row.branch || '-'}</td>
                         <td>${row.appropriation_category || '-'}</td>
-                        <td>${row.budget_title || '-'}</td>
+                        <td>${budget_activity}</td>
                         <td>${fy}</td>
-                        <td>${amount}</td>
+                        <td>${formattedAmount}</td>
+                        <td>${direction}</td>
                         <td>${explanation}${explanation.length >= 150 ? '...' : ''}</td>
                         <td><a href="data/${filename.replace('.pdf', '_extracted.csv')}" class="download-btn" download>CSV</a></td>
                     </tr>
