@@ -23,8 +23,11 @@ class ComptrollerScraper:
     
     BASE_URL = "https://comptroller.defense.gov"
     REPROGRAMMING_URLS = [
-        "/Budget-Execution/Reprogramming",
-        "/Portals/45/Documents/execution/reprogramming/"
+        "/Budget-Execution/Reprogramming/",
+        "/Portals/45/Documents/execution/reprogramming/fy2025/",
+        "/Portals/45/Documents/execution/reprogramming/fy2024/",
+        "/Portals/45/Documents/execution/reprogramming/fy2023/",
+        "/Portals/45/Documents/execution/reprogramming/fy2022/"
     ]
     
     def __init__(self, output_dir: str = "data/pdfs", metadata_file: str = "data/metadata.json"):
