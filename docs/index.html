@@ -285,6 +285,94 @@
             fill: white;
             font-weight: bold;
         }
+
+        /* DD1414 Dashboard Styles */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .dashboard-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .dashboard-card p {
+            color: #6c757d;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .stats-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background: #5a6fd8;
+        }
+
+        .btn-primary {
+            background: #667eea;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
     </style>
 </head>
 <body>
@@ -368,6 +456,50 @@
                 </div>
                 <div class="gantt-container">
                     <div id="gantt-chart"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔍 DD1414 Analysis Dashboard</h2>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <h3>📈 Interactive Dashboard</h3>
+                        <p>Comprehensive analysis of DD1414 reprogramming actions with interactive visualizations</p>
+                        <a href="dd1414_dashboard.html" class="btn btn-primary">View Dashboard</a>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>🌊 Sankey Diagram</h3>
+                        <p>Reprogramming flows by year and organization</p>
+                        <a href="dd1414_sankey.html" class="btn btn-secondary">View Sankey</a>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>📊 Timeline Analysis</h3>
+                        <p>Amounts and document counts over time</p>
+                        <a href="dd1414_timeline.html" class="btn btn-secondary">View Timeline</a>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>🏛️ Organizations</h3>
+                        <p>Distribution of documents by organization</p>
+                        <a href="dd1414_organizations.html" class="btn btn-secondary">View Organizations</a>
+                    </div>
+                </div>
+                <div class="stats-summary">
+                    <div class="stat-item">
+                        <span class="stat-number">34</span>
+                        <span class="stat-label">Documents</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">$484.6B</span>
+                        <span class="stat-label">Total Value</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2007-2025</span>
+                        <span class="stat-label">Years Covered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">97.5%</span>
+                        <span class="stat-label">Confidence</span>
+                    </div>
                 </div>
             </div>
 

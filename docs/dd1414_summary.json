@@ -1,0 +1,51 @@
+{
+  "total_documents": 34,
+  "fiscal_years_covered": [
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "years_span": "2007-2025",
+  "total_value": 484620632000.0,
+  "average_amount": 14253548000.0,
+  "median_amount": 58164192.5,
+  "max_amount": 385457121137.0,
+  "min_amount": 20301.0,
+  "extraction_methods": {
+    "text": 18,
+    "ocr": 16
+  },
+  "document_types": {
+    "Base_for_Reprogramming_Actions": 18,
+    "Call_Memo": 14,
+    "Unknown": 2
+  },
+  "organizations": {
+    "DEPARTMENT OF DEFENSE": 15,
+    "Department of Defense": 13,
+    "DoD": 3,
+    "Office of the Secretary": 1,
+    "ARMY": 1,
+    "Air Force": 1
+  },
+  "average_confidence": 97.4843439734152,
+  "high_confidence_docs": 34,
+  "ocr_documents": 16,
+  "text_documents": 18
+}
