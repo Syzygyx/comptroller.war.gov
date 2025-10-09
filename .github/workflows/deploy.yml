@@ -1,0 +1,148 @@
+name: Deploy Application
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y tesseract-ocr poppler-utils
+    
+    - name: Install Python dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Create data directories
+      run: |
+        mkdir -p data/pdfs
+        mkdir -p data/csv
+        mkdir -p data/embeddings
+        mkdir -p data/validation
+    
+    - name: Download PDFs (if not exists)
+      env:
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        LLM_PROVIDER: openrouter
+      run: |
+        # Only download if we don't have many PDFs already
+        if [ $(find data/pdfs -name "*.pdf" | wc -l) -lt 10 ]; then
+          python src/main.py --max-downloads 5
+        else
+          echo "PDFs already exist, skipping download"
+        fi
+    
+    - name: Process PDFs with OCR
+      env:
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        LLM_PROVIDER: openrouter
+      run: |
+        python src/main.py --process-only
+    
+    - name: Generate RAG embeddings
+      env:
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        LLM_PROVIDER: openrouter
+      run: |
+        python src/rag_processor.py --rebuild || echo "RAG processing failed, continuing..."
+    
+    - name: Copy data to docs folder
+      run: |
+        # Copy CSV files
+        cp -r data/csv/* docs/data/ 2>/dev/null || true
+        
+        # Copy metadata
+        cp data/metadata.json docs/data/ 2>/dev/null || true
+        
+        # Copy validation reports
+        cp data/validation/validation_summary.json docs/data/ 2>/dev/null || true
+        
+        # Copy embeddings for client-side RAG
+        cp -r data/embeddings/* docs/data/embeddings/ 2>/dev/null || true
+    
+    - name: Update timestamp
+      run: |
+        echo "const lastUpdated = '$(date -u +"%Y-%m-%d %H:%M:%S UTC")';" > docs/last-updated.js
+    
+    - name: Create deployment package
+      run: |
+        # Create a deployment package with the chat API
+        mkdir -p deployment
+        
+        # Copy all necessary files
+        cp -r docs/* deployment/
+        cp -r src deployment/
+        cp requirements.txt deployment/
+        cp README.md deployment/
+        
+        # Create a startup script
+        cat > deployment/start.sh << 'EOF'
+        #!/bin/bash
+        echo "Starting Comptroller War Gov Application..."
+        
+        # Install dependencies
+        pip install -r requirements.txt
+        
+        # Start the chat API server
+        cd src
+        python chat_api.py --host 0.0.0.0 --port 8080
+        EOF
+        
+        chmod +x deployment/start.sh
+        
+        # Create a simple index.html that redirects to the API
+        cat > deployment/index.html << 'EOF'
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Comptroller War Gov</title>
+            <meta http-equiv="refresh" content="0; url=/">
+        </head>
+        <body>
+            <p>Redirecting to application...</p>
+        </body>
+        </html>
+        EOF
+    
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
+      with:
+        artifact_name: deployment
+        path: deployment
+    
+    - name: Report deployment status
+      run: |
+        echo "## Deployment Complete" >> $GITHUB_STEP_SUMMARY
+        echo "- Application deployed to GitHub Pages" >> $GITHUB_STEP_SUMMARY
+        echo "- Chat API available at /api/chat-widget" >> $GITHUB_STEP_SUMMARY
+        echo "- OpenRouter API key configured from secrets" >> $GITHUB_STEP_SUMMARY

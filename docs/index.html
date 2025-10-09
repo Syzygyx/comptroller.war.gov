@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comptroller War Gov - Data Extraction Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.css">
     <style>
         * {
             margin: 0;
@@ -222,6 +224,67 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        /* Progress Tracking Styles */
+        .progress-overview {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .progress-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .progress-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .progress-label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .progress-value {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1em;
+        }
+
+        .gantt-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow-x: auto;
+        }
+
+        #gantt-chart {
+            min-width: 800px;
+        }
+
+        /* Frappe Gantt customization */
+        .gantt .bar {
+            fill: #667eea;
+        }
+
+        .gantt .bar-progress {
+            fill: #28a745;
+        }
+
+        .gantt .bar-label {
+            fill: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -235,7 +298,7 @@
             <a href="index.html" class="active">Dashboard</a>
             <a href="browse.html">Browse Data</a>
             <a href="progress.html">Processing Log</a>
-            <a href="chat.html">Chat</a>
+            <a href="/chat">Chat</a>
             <a href="sankey.html">Budget Flow</a>
         </nav>
 
@@ -280,6 +343,34 @@
                 </div>
             </div>
 
+            <!-- Project Progress -->
+            <div class="section">
+                <h2>Project Progress</h2>
+                <div class="progress-overview">
+                    <div class="progress-summary">
+                        <div class="progress-item">
+                            <span class="progress-label">Overall Progress:</span>
+                            <span class="progress-value" id="overallProgress">-</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">DD1414 Documents:</span>
+                            <span class="progress-value" id="dd1414Progress">-</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">OCR Processing:</span>
+                            <span class="progress-value" id="ocrProgress">-</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">CSV Generation:</span>
+                            <span class="progress-value" id="csvProgress">-</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gantt-container">
+                    <div id="gantt-chart"></div>
+                </div>
+            </div>
+
             <!-- Quick Actions -->
             <div class="section">
                 <h2>Quick Actions</h2>
@@ -296,6 +387,9 @@
     </div>
 
     <script src="last-updated.js"></script>
+    <script src="client-rag.js"></script>
+    <script src="rocket-chat-widget.js"></script>
+    <script src="progress-tracker.js"></script>
     <script>
         // Load and display data
         async function loadDashboard() {
@@ -396,8 +490,123 @@
             document.getElementById('lastUpdated').textContent = new Date().toLocaleString();
         }
         
+        // Initialize progress tracker
+        let progressTracker = null;
+        let ganttChart = null;
+
+        async function initializeProgressTracker() {
+            try {
+                console.log('Initializing progress tracker...');
+                progressTracker = new ProgressTracker();
+                await progressTracker.init();
+                
+                console.log('Progress tracker initialized, updating UI...');
+                
+                // Update progress summary
+                const overallProgress = progressTracker.getOverallProgress();
+                document.getElementById('overallProgress').textContent = overallProgress + '%';
+                
+                const tasks = progressTracker.getTasks();
+                const dd1414Task = tasks.find(t => t.id === 'download_dd1414');
+                const ocrTask = tasks.find(t => t.id === 'ocr_processing');
+                const csvTask = tasks.find(t => t.id === 'csv_generation');
+                
+                document.getElementById('dd1414Progress').textContent = (dd1414Task?.progress || 0) + '%';
+                document.getElementById('ocrProgress').textContent = (ocrTask?.progress || 0) + '%';
+                document.getElementById('csvProgress').textContent = (csvTask?.progress || 0) + '%';
+                
+                console.log('Progress summary updated, creating Gantt chart...');
+                
+                // Create Gantt chart
+                createGanttChart(tasks);
+                
+                console.log('Progress tracker initialization complete');
+                
+            } catch (error) {
+                console.error('Error initializing progress tracker:', error);
+                // Show error in UI
+                document.getElementById('overallProgress').textContent = 'Error';
+                document.getElementById('dd1414Progress').textContent = 'Error';
+                document.getElementById('ocrProgress').textContent = 'Error';
+                document.getElementById('csvProgress').textContent = 'Error';
+            }
+        }
+
+        function createGanttChart(tasks) {
+            try {
+                // Check if Gantt is available
+                if (typeof Gantt === 'undefined') {
+                    console.warn('Gantt library not available, showing fallback');
+                    showFallbackChart(tasks);
+                    return;
+                }
+
+                // Convert tasks to Frappe Gantt format
+                const ganttData = tasks.map(task => ({
+                    id: task.id,
+                    name: task.name,
+                    start: task.start,
+                    end: task.end,
+                    progress: task.progress,
+                    dependencies: task.dependencies.join(','),
+                    custom_class: 'gantt-task'
+                }));
+
+                ganttChart = new Gantt('#gantt-chart', ganttData, {
+                    header_height: 50,
+                    column_width: 30,
+                    step: 24,
+                    view_modes: ['Quarter Day', 'Half Day', 'Day', 'Week', 'Month'],
+                    bar_height: 20,
+                    bar_corner_radius: 3,
+                    arrow_curve: 5,
+                    padding: 18,
+                    popup_trigger: 'click',
+                    date_format: 'YYYY-MM-DD',
+                    on_click: function (task) {
+                        console.log('Task clicked:', task);
+                    },
+                    on_date_change: function (task, start, end) {
+                        console.log('Task date changed:', task, start, end);
+                    },
+                    on_progress_change: function (task, progress) {
+                        console.log('Task progress changed:', task, progress);
+                    },
+                    on_view_change: function (mode) {
+                        console.log('View mode changed:', mode);
+                    }
+                });
+            } catch (error) {
+                console.error('Error creating Gantt chart:', error);
+                showFallbackChart(tasks);
+            }
+        }
+
+        function showFallbackChart(tasks) {
+            let html = '<div style="text-align: center; padding: 20px;">';
+            html += '<h3>Project Tasks</h3>';
+            html += '<div style="display: grid; gap: 10px; text-align: left;">';
+            
+            tasks.forEach(task => {
+                const progressBar = '█'.repeat(Math.floor(task.progress / 5)) + '░'.repeat(20 - Math.floor(task.progress / 5));
+                html += `
+                    <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+                        <div style="font-weight: bold; margin-bottom: 5px;">${task.name}</div>
+                        <div style="font-size: 12px; color: #666; margin-bottom: 5px;">${task.progress}% complete</div>
+                        <div style="font-family: monospace; font-size: 10px;">${progressBar}</div>
+                    </div>
+                `;
+            });
+            
+            html += '</div></div>';
+            document.getElementById('gantt-chart').innerHTML = html;
+        }
+
         // Load dashboard on page load
         loadDashboard();
+        
+        // Initialize progress tracker
+        initializeProgressTracker();
     </script>
 </body>
 </html>
