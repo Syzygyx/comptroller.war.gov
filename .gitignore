@@ -33,6 +33,7 @@ pdfs/
 # Data files
 *.csv
 !example_output.csv
+!docs/data/**/*.csv
 data/
 !docs/data/
 output/
