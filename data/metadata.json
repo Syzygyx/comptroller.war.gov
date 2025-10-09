@@ -1,0 +1,1524 @@
+{
+  "last_run": "2025-10-09T03:42:25.117774",
+  "downloaded_files": {
+    "PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018.pdf": {
+      "url": "https://media.defense.gov/2018/Oct/03/2002047941/-1/-1/1/PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018.pdf",
+      "filename": "PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018.pdf",
+      "title": "Providing for the Common Defense Report - September 2018",
+      "source_page": "https://comptroller.defense.gov/Budget-Execution/Reprogramming",
+      "discovered_at": "2025-10-07T15:13:52.833663",
+      "hash": "0ac969cf00ba66534309d509a63e624b",
+      "size": 2293678,
+      "downloaded_at": "2025-10-07T15:13:55.546099",
+      "local_path": "data/pdfs/PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018.pdf"
+    },
+    "Budget_Accounts-Functional_Titles.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/Budget_Accounts-Functional_Titles.pdf",
+      "filename": "Budget_Accounts-Functional_Titles.pdf",
+      "title": "Budget Accounts - Functional Titles",
+      "source_page": "https://comptroller.defense.gov/Budget-Execution/Reprogramming",
+      "discovered_at": "2025-10-07T15:13:52.833681",
+      "hash": "4b4cf8db23edce0a06b690d6337e6c24",
+      "size": 96931,
+      "downloaded_at": "2025-10-07T15:13:57.735191",
+      "local_path": "data/pdfs/Budget_Accounts-Functional_Titles.pdf"
+    },
+    "Reprogramming_Overview.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/Reprogramming_Overview.pdf",
+      "filename": "Reprogramming_Overview.pdf",
+      "title": "here.",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy2009.aspx",
+      "discovered_at": "2025-10-07T19:36:58.721931",
+      "hash": "8966e3c4c33abf619dc3c54289afb428",
+      "size": 38262,
+      "downloaded_at": "2025-10-07T19:39:32.818101",
+      "local_path": "data/pdfs/Reprogramming_Overview.pdf"
+    },
+    "03_06.pdf": {
+      "url": "http://comptroller.defense.gov/Portals/45/documents/fmr/current/03/03_06.pdf",
+      "filename": "03_06.pdf",
+      "title": "Volume 3, Chapter 6.",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/ReprogrammingFY2025.aspx",
+      "discovered_at": "2025-10-07T19:36:58.730058",
+      "hash": "8ee72a2e772224c74317176d3ba8bf65",
+      "size": 4711740,
+      "downloaded_at": "2025-10-07T19:40:09.480506",
+      "local_path": "data/pdfs/03_06.pdf"
+    },
+    "FY_2025_MILCON_Operating_Plan_signed_20250501.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2025_MILCON_Operating_Plan_signed_20250501.pdf",
+      "filename": "FY_2025_MILCON_Operating_Plan_signed_20250501.pdf",
+      "title": "FY2025 DD 1414 Base for Reprogramming Actions (MILCON Operating Plan)",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713523",
+      "hash": "b6d2d019ac1c9c21e21505942a0f09be",
+      "size": 901466,
+      "downloaded_at": "2025-10-07T19:40:45.028101",
+      "local_path": "data/pdfs/FY_2025_MILCON_Operating_Plan_signed_20250501.pdf"
+    },
+    "FY_2025_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2025_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2025_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2025 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713535",
+      "hash": "b622ab64dc511d742191a38556f54c30",
+      "size": 4576379,
+      "downloaded_at": "2025-10-07T19:41:17.040261",
+      "local_path": "data/pdfs/FY_2025_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2024_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2024_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2024_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2024 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713549",
+      "hash": "dc00a6958b291639a5fefd65e81d141a",
+      "size": 8014295,
+      "downloaded_at": "2025-10-07T19:41:48.989907",
+      "local_path": "data/pdfs/FY_2024_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2023_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2023_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2023_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2023 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713562",
+      "hash": "aa0d1a2da9c952474482a361c41ac5c1",
+      "size": 15890059,
+      "downloaded_at": "2025-10-07T19:42:21.243541",
+      "local_path": "data/pdfs/FY_2023_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2022_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2022_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2022_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2022 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713573",
+      "hash": "8ae5782f84fcea3a0cb8efa636c333f6",
+      "size": 3691267,
+      "downloaded_at": "2025-10-07T19:42:56.922558",
+      "local_path": "data/pdfs/FY_2022_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2021_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2021_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2021_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2021 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713583",
+      "hash": "1920adc8f1618c509869fc0bc906e2a9",
+      "size": 5398629,
+      "downloaded_at": "2025-10-07T19:43:16.690424",
+      "local_path": "data/pdfs/FY_2021_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2020_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2020_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2020_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2020 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713594",
+      "hash": "72969be9fd0d0244a0e047f7b7ed9c47",
+      "size": 2107970,
+      "downloaded_at": "2025-10-07T19:43:49.135380",
+      "local_path": "data/pdfs/FY_2020_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2019_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2019_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2019_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2019 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713605",
+      "hash": "687bdc44ad8381cf22b136b40af3ca9d",
+      "size": 9000244,
+      "downloaded_at": "2025-10-07T19:44:24.953875",
+      "local_path": "data/pdfs/FY_2019_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2018_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2018_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2018_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2018 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713616",
+      "hash": "46941654e805da9936c1ae58d986027b",
+      "size": 4706446,
+      "downloaded_at": "2025-10-07T19:44:57.088471",
+      "local_path": "data/pdfs/FY_2018_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2016_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2016_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2016_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2016 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713638",
+      "hash": "fefe71e9828ed04d85a2841d4674b3a1",
+      "size": 3111308,
+      "downloaded_at": "2025-10-07T19:46:09.199908",
+      "local_path": "data/pdfs/FY_2016_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2014_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2014_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2014_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2014 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713660",
+      "hash": "959217eff880623a176a58775b6cbc40",
+      "size": 6073696,
+      "downloaded_at": "2025-10-07T19:47:21.398802",
+      "local_path": "data/pdfs/FY_2014_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2013_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2013_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2013_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2013 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713671",
+      "hash": "b302c3c7c0894fa66f644b5d003fd899",
+      "size": 6497933,
+      "downloaded_at": "2025-10-07T19:47:57.325236",
+      "local_path": "data/pdfs/FY_2013_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2012_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2012_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2012_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2012 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-07T19:36:58.713682",
+      "hash": "94fbb3980e1f17a00fe5e039b0ac01f3",
+      "size": 4192983,
+      "downloaded_at": "2025-10-07T19:48:32.804749",
+      "local_path": "data/pdfs/FY_2012_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "05-17_PA_F_22_Aircraft.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-17_PA_F_22_Aircraft.pdf",
+      "filename": "05-17_PA_F_22_Aircraft.pdf",
+      "title": "05-17_PA_F_22_AIRCRAFT",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy2005.aspx",
+      "discovered_at": "2025-10-07T19:36:58.714014",
+      "hash": "73b54073c1252e75d72f83ff19937812",
+      "size": 69463,
+      "downloaded_at": "2025-10-07T19:57:02.431639",
+      "local_path": "data/pdfs/05-17_PA_F_22_Aircraft.pdf"
+    },
+    "05-28_PA_Nuclear_Weapons.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-28_PA_Nuclear_Weapons.pdf",
+      "filename": "05-28_PA_Nuclear_Weapons.pdf",
+      "title": "05-28_PA_NUCLEAR_WEAPONS",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy2005.aspx",
+      "discovered_at": "2025-10-07T19:36:58.714137",
+      "hash": "0d2f7d4d08eff414ded74415c26e0fae",
+      "size": 117550,
+      "downloaded_at": "2025-10-07T20:03:30.608972",
+      "local_path": "data/pdfs/05-28_PA_Nuclear_Weapons.pdf"
+    },
+    "05-29_PA_B_2_WTA.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-29_PA_B_2_WTA.pdf",
+      "filename": "05-29_PA_B_2_WTA.pdf",
+      "title": "05-29_PA_B_2_WTA",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy2005.aspx",
+      "discovered_at": "2025-10-07T19:36:58.714148",
+      "hash": "2fcafffa904f7641dc402a15b0c82789",
+      "size": 66935,
+      "downloaded_at": "2025-10-07T20:03:51.483703",
+      "local_path": "data/pdfs/05-29_PA_B_2_WTA.pdf"
+    },
+    "05-37_PA_Medical_Technology.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-37_PA_Medical_Technology.pdf",
+      "filename": "05-37_PA_Medical_Technology.pdf",
+      "title": "05-37_PA_MEDICAL_TECHNOLOGY",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy2005.aspx",
+      "discovered_at": "2025-10-07T19:36:58.714236",
+      "hash": "15d9154615835b9c7af7c22103ff6cbd",
+      "size": 65334,
+      "downloaded_at": "2025-10-07T20:08:00.750424",
+      "local_path": "data/pdfs/05-37_PA_Medical_Technology.pdf"
+    },
+    "05-004_IR_C_FCFCD.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-004_IR_C_FCFCD.pdf",
+      "filename": "05-004_IR_C_FCFCD.pdf",
+      "title": "05-04_IR_C_FCFCD",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy2005.aspx",
+      "discovered_at": "2025-10-07T19:36:58.714468",
+      "hash": "61b4145c7c5ef60d689b0b4cfb559c00",
+      "size": 85300,
+      "downloaded_at": "2025-10-07T20:16:16.898240",
+      "local_path": "data/pdfs/05-004_IR_C_FCFCD.pdf"
+    },
+    "05-004_IR_IED.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-004_IR_IED.pdf",
+      "filename": "05-004_IR_IED.pdf",
+      "title": "05-04_IR_IED",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy2005.aspx",
+      "discovered_at": "2025-10-07T19:36:58.714479",
+      "hash": "ce4d4b9ef771493ea4175417707cc699",
+      "size": 113118,
+      "downloaded_at": "2025-10-07T20:16:48.981360",
+      "local_path": "data/pdfs/05-004_IR_IED.pdf"
+    },
+    "Unclassified_Published_Sequestration_Final.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/Sequestration/Unclassified_Published_Sequestration_Final.pdf",
+      "filename": "Unclassified_Published_Sequestration_Final.pdf",
+      "title": "Untitled",
+      "source_page": "https://comptroller.defense.gov/Budget-Execution/Reprogramming/",
+      "discovered_at": "2025-10-08T00:12:26.673375",
+      "hash": "a992bb347457c65e8782a791b98092d6",
+      "size": 1823555,
+      "downloaded_at": "2025-10-08T00:12:28.584130",
+      "local_path": "data/pdfs/Unclassified_Published_Sequestration_Final.pdf"
+    },
+    "FY_2017_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2017_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2017_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2017 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-08T00:12:26.628635",
+      "hash": "529ff2ce12089b2d6d04cfab322c77aa",
+      "size": 5301080,
+      "downloaded_at": "2025-10-08T00:12:31.153811",
+      "local_path": "data/pdfs/FY_2017_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2015_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2015_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2015_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2015 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-08T00:12:26.628659",
+      "hash": "533d1bd4bacf6b9026f44727e0aff256",
+      "size": 4617906,
+      "downloaded_at": "2025-10-08T00:12:33.525355",
+      "local_path": "data/pdfs/FY_2015_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2011_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2011_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2011_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2011 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-08T00:12:26.628712",
+      "hash": "9ef99e72d031410e1529f209505b2d01",
+      "size": 2206374,
+      "downloaded_at": "2025-10-08T00:12:36.990176",
+      "local_path": "data/pdfs/FY_2011_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2010_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2010_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2010_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2010 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-08T00:12:26.628725",
+      "hash": "9a7ce7aaa7b508d6181891bef199d4f9",
+      "size": 73676441,
+      "downloaded_at": "2025-10-08T00:12:42.216441",
+      "local_path": "data/pdfs/FY_2010_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2009_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2009_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2009_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2009 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-08T00:12:26.628737",
+      "hash": "137a46fad8d63193bd38f8ac4fe51602",
+      "size": 40601777,
+      "downloaded_at": "2025-10-08T00:12:46.425337",
+      "local_path": "data/pdfs/FY_2009_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "FY_2008_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2008_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2008_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "title": "FY2008 DD 1414 Base for Reprogramming Actions",
+      "source_page": "https://comptroller.defense.gov/BudgetExecution/DD1414_Base_for_Reprogramming_Actions/",
+      "discovered_at": "2025-10-08T00:12:26.628749",
+      "hash": "fe0676c3735c20fdd2ad9268275fecc6",
+      "size": 53715433,
+      "downloaded_at": "2025-10-08T00:12:51.429080",
+      "local_path": "data/pdfs/FY_2008_DD_1414_Base_for_Reprogramming_Actions.pdf"
+    },
+    "99-002_PA_Panama.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-002_PA_Panama.pdf",
+      "filename": "99-002_PA_Panama.pdf",
+      "title": "99-002_PA_PANAMA",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630360",
+      "hash": "62f4e6a235d222cb2f33cd3541e4169c",
+      "size": 18163,
+      "downloaded_at": "2025-10-08T00:12:53.737928",
+      "local_path": "data/pdfs/99-002_PA_Panama.pdf"
+    },
+    "99-003_PA_PWTCV.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-003_PA_PWTCV.pdf",
+      "filename": "99-003_PA_PWTCV.pdf",
+      "title": "99-003_PA_PWTCV",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630374",
+      "hash": "caa9e3cb6f43a0c58c7deaa16821eadb",
+      "size": 15181,
+      "downloaded_at": "2025-10-08T00:12:55.968284",
+      "local_path": "data/pdfs/99-003_PA_PWTCV.pdf"
+    },
+    "99-004_N_AF_U2.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-004_N_AF_U2.pdf",
+      "filename": "99-004_N_AF_U2.pdf",
+      "title": "99-004_N_AF_U2",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630394",
+      "hash": "673347423f63c16ff25e3ee2052d9a49",
+      "size": 16431,
+      "downloaded_at": "2025-10-08T00:12:58.176881",
+      "local_path": "data/pdfs/99-004_N_AF_U2.pdf"
+    },
+    "99-004_PA_PAC-3.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-004_PA_PAC-3.pdf",
+      "filename": "99-004_PA_PAC-3.pdf",
+      "title": "99-004_PA_PAC-3",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630407",
+      "hash": "15781a792c10a8318ef2435435c18404",
+      "size": 15614,
+      "downloaded_at": "2025-10-08T00:13:00.537314",
+      "local_path": "data/pdfs/99-004_PA_PAC-3.pdf"
+    },
+    "99-005_N_F14.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-005_N_F14.pdf",
+      "filename": "99-005_N_F14.pdf",
+      "title": "99-005_N_F14",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630419",
+      "hash": "d091f254db341dc2b0be774737b70dab",
+      "size": 18293,
+      "downloaded_at": "2025-10-08T00:13:04.666825",
+      "local_path": "data/pdfs/99-005_N_F14.pdf"
+    },
+    "99-005_PA_atach.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-005_PA_atach.pdf",
+      "filename": "99-005_PA_atach.pdf",
+      "title": "99-005_PA_ATACH",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630432",
+      "hash": "25165f5a65029c8c94b3eb643bf79dd8",
+      "size": 6047,
+      "downloaded_at": "2025-10-08T00:13:07.181033",
+      "local_path": "data/pdfs/99-005_PA_atach.pdf"
+    },
+    "99-005_PA_atch.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-005_PA_atch.pdf",
+      "filename": "99-005_PA_atch.pdf",
+      "title": "99-005_PA_ATCH",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630445",
+      "hash": "ecc866cea1e95107fc3074cffb5c1857",
+      "size": 6046,
+      "downloaded_at": "2025-10-08T00:13:10.753976",
+      "local_path": "data/pdfs/99-005_PA_atch.pdf"
+    },
+    "99-005_PA_Jt_Exp.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-005_PA_Jt_Exp.pdf",
+      "filename": "99-005_PA_Jt_Exp.pdf",
+      "title": "99-005_PA_JT_EXP",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630457",
+      "hash": "afed95b9a3d018c0fe65b7f78b8fce99",
+      "size": 19234,
+      "downloaded_at": "2025-10-08T00:13:13.094844",
+      "local_path": "data/pdfs/99-005_PA_Jt_Exp.pdf"
+    },
+    "99-006_N_F18.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-006_N_F18.pdf",
+      "filename": "99-006_N_F18.pdf",
+      "title": "99-006_N_F18",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630469",
+      "hash": "62f520522d227450e175fad9a07d406f",
+      "size": 18333,
+      "downloaded_at": "2025-10-08T00:13:15.325487",
+      "local_path": "data/pdfs/99-006_N_F18.pdf"
+    },
+    "99-006_PA_AF_1415.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-006_PA_AF_1415.pdf",
+      "filename": "99-006_PA_AF_1415.pdf",
+      "title": "99-006_PA_AF_1415",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630482",
+      "hash": "f2e4b58041e024b501ef6acb44d17d25",
+      "size": 22783,
+      "downloaded_at": "2025-10-08T00:13:17.742044",
+      "local_path": "data/pdfs/99-006_PA_AF_1415.pdf"
+    },
+    "99-007_PA_AEGIS.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-007_PA_AEGIS.pdf",
+      "filename": "99-007_PA_AEGIS.pdf",
+      "title": "99-007_PA_AEGIS",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630494",
+      "hash": "8aae81b27401862948869b26b84c7d43",
+      "size": 27305,
+      "downloaded_at": "2025-10-08T00:13:22.832712",
+      "local_path": "data/pdfs/99-007_PA_AEGIS.pdf"
+    },
+    "99-009_PA_SOCOM_ASDS.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-009_PA_SOCOM_ASDS.pdf",
+      "filename": "99-009_PA_SOCOM_ASDS.pdf",
+      "title": "99-009_PA_SOCOM_ASDS",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630507",
+      "hash": "1164e5502a0c047f56c5964cd17e524a",
+      "size": 28849,
+      "downloaded_at": "2025-10-08T00:13:25.873739",
+      "local_path": "data/pdfs/99-009_PA_SOCOM_ASDS.pdf"
+    },
+    "99-010_PA_Omnibus.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-010_PA_Omnibus.pdf",
+      "filename": "99-010_PA_Omnibus.pdf",
+      "title": "99-010_PA_OMNIBUS",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630519",
+      "hash": "50235b5ca8acca12111287958d04d7f7",
+      "size": 132205,
+      "downloaded_at": "2025-10-08T00:13:30.688182",
+      "local_path": "data/pdfs/99-010_PA_Omnibus.pdf"
+    },
+    "99-011R_PA_Ar_Trainer.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-011R_PA_Ar_Trainer.pdf",
+      "filename": "99-011R_PA_Ar_Trainer.pdf",
+      "title": "99-011R_PA_AR_TRAINER",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630532",
+      "hash": "1c7e90e070ea41d988ec82f6c8e70c87",
+      "size": 16634,
+      "downloaded_at": "2025-10-08T00:13:34.266390",
+      "local_path": "data/pdfs/99-011R_PA_Ar_Trainer.pdf"
+    },
+    "99-013_PA_UAV.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-013_PA_UAV.pdf",
+      "filename": "99-013_PA_UAV.pdf",
+      "title": "99-013_PA_UAV",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630545",
+      "hash": "9411c077e38fddf56b2b6209c7ebd130",
+      "size": 15744,
+      "downloaded_at": "2025-10-08T00:13:41.099566",
+      "local_path": "data/pdfs/99-013_PA_UAV.pdf"
+    },
+    "99-014_PA_Jt_Stars.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-014_PA_Jt_Stars.pdf",
+      "filename": "99-014_PA_Jt_Stars.pdf",
+      "title": "99-014_PA_JT_STARS",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630557",
+      "hash": "3b36d3920fa9873713518fefc15b79c7",
+      "size": 49211,
+      "downloaded_at": "2025-10-08T00:13:44.650568",
+      "local_path": "data/pdfs/99-014_PA_Jt_Stars.pdf"
+    },
+    "99-015_PA_GBCS.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/99-015_PA_GBCS.pdf",
+      "filename": "99-015_PA_GBCS.pdf",
+      "title": "99-015_PA_GBCS",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630570",
+      "hash": "2b3588835d181da00a720d9822aaa56b",
+      "size": 16281,
+      "downloaded_at": "2025-10-08T00:13:46.910765",
+      "local_path": "data/pdfs/99-015_PA_GBCS.pdf"
+    },
+    "f99001_n_fuel_1415.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/f99001_n_fuel_1415.pdf",
+      "filename": "f99001_n_fuel_1415.pdf",
+      "title": "F99001_N_FUEL_1415",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630583",
+      "hash": "c30725a73e2644ef7c6c24e7a037fb09",
+      "size": 22876,
+      "downloaded_at": "2025-10-08T00:13:49.469537",
+      "local_path": "data/pdfs/f99001_n_fuel_1415.pdf"
+    },
+    "f99001_pa_ch60_1415.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/f99001_pa_ch60_1415.pdf",
+      "filename": "f99001_pa_ch60_1415.pdf",
+      "title": "F99001_PA_CH60_1415",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630595",
+      "hash": "b04bf57bdfd24940890a482403ec01e6",
+      "size": 18235,
+      "downloaded_at": "2025-10-08T00:13:51.755396",
+      "local_path": "data/pdfs/f99001_pa_ch60_1415.pdf"
+    },
+    "f99002_n_calcm_1415.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/f99002_n_calcm_1415.pdf",
+      "filename": "f99002_n_calcm_1415.pdf",
+      "title": "F99002_N_CALCM_1415",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630608",
+      "hash": "25cd6588b37aae117cb02756eb5ed4d4",
+      "size": 18065,
+      "downloaded_at": "2025-10-08T00:13:54.004290",
+      "local_path": "data/pdfs/f99002_n_calcm_1415.pdf"
+    },
+    "f99003_n_u2_ew.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/prior1415s/f99003_n_u2_ew.pdf",
+      "filename": "f99003_n_u2_ew.pdf",
+      "title": "F99003_N_U2_EW",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630620",
+      "hash": "02111fd9c919b5ed9f1f567034add827",
+      "size": 21801,
+      "downloaded_at": "2025-10-08T00:13:56.370058",
+      "local_path": "data/pdfs/f99003_n_u2_ew.pdf"
+    },
+    "99-004_IR-C_FCFCD.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-004_IR-C_FCFCD.pdf",
+      "filename": "99-004_IR-C_FCFCD.pdf",
+      "title": "99-004_IR-C_FCFCD",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630632",
+      "hash": "e4ca5538fc37bff0f619a55e65f4fd11",
+      "size": 24242,
+      "downloaded_at": "2025-10-08T00:13:58.600526",
+      "local_path": "data/pdfs/99-004_IR-C_FCFCD.pdf"
+    },
+    "99-032_IR_CMP.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-032_IR_CMP.pdf",
+      "filename": "99-032_IR_CMP.pdf",
+      "title": "99-032_IR_CMP",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630645",
+      "hash": "78387786377801f6822dc0507d6a354b",
+      "size": 15600,
+      "downloaded_at": "2025-10-08T00:14:01.210970",
+      "local_path": "data/pdfs/99-032_IR_CMP.pdf"
+    },
+    "99-037_IR_New_Horizons.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-037_IR_New_Horizons.pdf",
+      "filename": "99-037_IR_New_Horizons.pdf",
+      "title": "99-037_IR_NEW_HORIZONS",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630657",
+      "hash": "646a2d51df35a320e31331e3dab1906c",
+      "size": 17976,
+      "downloaded_at": "2025-10-08T00:14:04.805313",
+      "local_path": "data/pdfs/99-037_IR_New_Horizons.pdf"
+    },
+    "99-038_IR_High_Power.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-038_IR_High_Power.pdf",
+      "filename": "99-038_IR_High_Power.pdf",
+      "title": "99-038_IR_HIGH_POWER",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630670",
+      "hash": "5872b7ed17643a75a1bfa761e1b32569",
+      "size": 15647,
+      "downloaded_at": "2025-10-08T00:14:08.095135",
+      "local_path": "data/pdfs/99-038_IR_High_Power.pdf"
+    },
+    "99-039_IR_OCOTF.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-039_IR_OCOTF.pdf",
+      "filename": "99-039_IR_OCOTF.pdf",
+      "title": "99-039_IR_OCOTF",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630682",
+      "hash": "eb931d1e73524fa14386a8e022e8ddc0",
+      "size": 31504,
+      "downloaded_at": "2025-10-08T00:14:12.713388",
+      "local_path": "data/pdfs/99-039_IR_OCOTF.pdf"
+    },
+    "99-040_IR_OCOTF.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-040_IR_OCOTF.pdf",
+      "filename": "99-040_IR_OCOTF.pdf",
+      "title": "99-040_IR_OCOTF",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630694",
+      "hash": "7ae4e14ed462792e4e583f945aa3ec5b",
+      "size": 15711,
+      "downloaded_at": "2025-10-08T00:14:15.429606",
+      "local_path": "data/pdfs/99-040_IR_OCOTF.pdf"
+    },
+    "99-041_IR_Counter-Drug.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-041_IR_Counter-Drug.pdf",
+      "filename": "99-041_IR_Counter-Drug.pdf",
+      "title": "99-041_IR_COUNTER-DRUG",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630707",
+      "hash": "cd90a10057c10a23bf997aa6a534889d",
+      "size": 38120,
+      "downloaded_at": "2025-10-08T00:14:17.659280",
+      "local_path": "data/pdfs/99-041_IR_Counter-Drug.pdf"
+    },
+    "99-042_IR_Navy_Night_Vis.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-042_IR_Navy_Night_Vis.pdf",
+      "filename": "99-042_IR_Navy_Night_Vis.pdf",
+      "title": "99-042_IR_NAVY_NIGHT_VIS",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630719",
+      "hash": "c21b14fa42667a3acde124edb9c95879",
+      "size": 15502,
+      "downloaded_at": "2025-10-08T00:14:20.174323",
+      "local_path": "data/pdfs/99-042_IR_Navy_Night_Vis.pdf"
+    },
+    "99-042_IR_Navy_Night_Vision.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-042_IR_Navy_Night_Vision.pdf",
+      "filename": "99-042_IR_Navy_Night_Vision.pdf",
+      "title": "99-042_IR_NAVY_NIGHT_VISION",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630732",
+      "hash": "3d338a4e7b79cf3f7c2a5ae097e69620",
+      "size": 15503,
+      "downloaded_at": "2025-10-08T00:14:22.493506",
+      "local_path": "data/pdfs/99-042_IR_Navy_Night_Vision.pdf"
+    },
+    "99-043_IR_Force_XXI.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-043_IR_Force_XXI.pdf",
+      "filename": "99-043_IR_Force_XXI.pdf",
+      "title": "99-043_IR_FORCE_XXI",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630745",
+      "hash": "beb91a74d5030680ee0707178465a42a",
+      "size": 27743,
+      "downloaded_at": "2025-10-08T00:14:24.940545",
+      "local_path": "data/pdfs/99-043_IR_Force_XXI.pdf"
+    },
+    "99-043_IR__Force_XXI.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-043_IR__Force_XXI.pdf",
+      "filename": "99-043_IR__Force_XXI.pdf",
+      "title": "99-043_IR__FORCE_XXI",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630758",
+      "hash": "322c0498fc8085f2382c172d1a1a2e9c",
+      "size": 27742,
+      "downloaded_at": "2025-10-08T00:14:27.326076",
+      "local_path": "data/pdfs/99-043_IR__Force_XXI.pdf"
+    },
+    "99-044_IR_Intel.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-044_IR_Intel.pdf",
+      "filename": "99-044_IR_Intel.pdf",
+      "title": "99-044_IR_INTEL",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630771",
+      "hash": "b857c72b75c420b1000c443128487a26",
+      "size": 15039,
+      "downloaded_at": "2025-10-08T00:14:29.553824",
+      "local_path": "data/pdfs/99-044_IR_Intel.pdf"
+    },
+    "99-045_IR_NGPAF.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-045_IR_NGPAF.pdf",
+      "filename": "99-045_IR_NGPAF.pdf",
+      "title": "99-045_IR_NGPAF",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630783",
+      "hash": "aa9f7e3e24e6d38acb0d64b9e3441c96",
+      "size": 15578,
+      "downloaded_at": "2025-10-08T00:14:32.023797",
+      "local_path": "data/pdfs/99-045_IR_NGPAF.pdf"
+    },
+    "99-046_IR_OCOTF.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-046_IR_OCOTF.pdf",
+      "filename": "99-046_IR_OCOTF.pdf",
+      "title": "99-046_IR_OCOTF",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630796",
+      "hash": "8f7e4c29aca32396b80eca65edad078a",
+      "size": 15401,
+      "downloaded_at": "2025-10-08T00:14:34.443059",
+      "local_path": "data/pdfs/99-046_IR_OCOTF.pdf"
+    },
+    "99-047_IR_Navy_ChemBio.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-047_IR_Navy_ChemBio.pdf",
+      "filename": "99-047_IR_Navy_ChemBio.pdf",
+      "title": "99-047_IR_NAVY_CHEMBIO",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630808",
+      "hash": "be775a6c1b1036f51fb5f1c82bc2417b",
+      "size": 18231,
+      "downloaded_at": "2025-10-08T00:14:36.690409",
+      "local_path": "data/pdfs/99-047_IR_Navy_ChemBio.pdf"
+    },
+    "99-047_IR_Navy_Chem_Bio.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-047_IR_Navy_Chem_Bio.pdf",
+      "filename": "99-047_IR_Navy_Chem_Bio.pdf",
+      "title": "99-047_IR_NAVY_CHEM_BIO",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630821",
+      "hash": "69d80ba3cf7b1b37a548aabfb0ff0302",
+      "size": 18232,
+      "downloaded_at": "2025-10-08T00:14:38.965338",
+      "local_path": "data/pdfs/99-047_IR_Navy_Chem_Bio.pdf"
+    },
+    "99-048_IR_GP2007_Spares.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-048_IR_GP2007_Spares.pdf",
+      "filename": "99-048_IR_GP2007_Spares.pdf",
+      "title": "99-048_IR_GP2007_SPARES",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630833",
+      "hash": "04e6b713b70132ffec6345d339af824e",
+      "size": 21134,
+      "downloaded_at": "2025-10-08T00:14:41.224323",
+      "local_path": "data/pdfs/99-048_IR_GP2007_Spares.pdf"
+    },
+    "99-048_IR_GP_2007_Spares.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-048_IR_GP_2007_Spares.pdf",
+      "filename": "99-048_IR_GP_2007_Spares.pdf",
+      "title": "99-048_IR_GP_2007_SPARES",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630846",
+      "hash": "7614d6c55e89ee2dd321dbcdcd708ff5",
+      "size": 21135,
+      "downloaded_at": "2025-10-08T00:14:43.662475",
+      "local_path": "data/pdfs/99-048_IR_GP_2007_Spares.pdf"
+    },
+    "99-049IRGP2008DepotMaintTra.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-049IRGP2008DepotMaintTra.pdf",
+      "filename": "99-049IRGP2008DepotMaintTra.pdf",
+      "title": "99-049IRGP2008DEPOTMAINTTRA",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630858",
+      "hash": "8bec71eae5d812bbdcd52e55f4b55646",
+      "size": 19695,
+      "downloaded_at": "2025-10-08T00:14:46.110105",
+      "local_path": "data/pdfs/99-049IRGP2008DepotMaintTra.pdf"
+    },
+    "99-049_IR_GP2008_Dep_M_Tr.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-049_IR_GP2008_Dep_M_Tr.pdf",
+      "filename": "99-049_IR_GP2008_Dep_M_Tr.pdf",
+      "title": "99-049_IR_GP2008_DEP_M_TR",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630870",
+      "hash": "8bec71eae5d812bbdcd52e55f4b55646",
+      "size": 19695,
+      "downloaded_at": "2025-10-08T00:14:48.564757",
+      "local_path": "data/pdfs/99-049_IR_GP2008_Dep_M_Tr.pdf"
+    },
+    "99-049_IR_GP_2008_D_M_T.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-049_IR_GP_2008_D_M_T.pdf",
+      "filename": "99-049_IR_GP_2008_D_M_T.pdf",
+      "title": "99-049_IR_GP_2008_D_M_T",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630883",
+      "hash": "8bec71eae5d812bbdcd52e55f4b55646",
+      "size": 19695,
+      "downloaded_at": "2025-10-08T00:14:50.851404",
+      "local_path": "data/pdfs/99-049_IR_GP_2008_D_M_T.pdf"
+    },
+    "99-050IRGP2010MilitaryTrain.pdf": {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/ir1415s/99-050IRGP2010MilitaryTrain.pdf",
+      "filename": "99-050IRGP2010MilitaryTrain.pdf",
+      "title": "99-050IRGP2010MILITARYTRAIN",
+      "source_page": "https://comptroller.defense.gov/budgetexecution/reprogrammingfy1999.aspx",
+      "discovered_at": "2025-10-08T00:12:26.630896",
+      "hash": "c32c8a7823ff9e2d81e8383a6a9f6ab6",
+      "size": 26414,
+      "downloaded_at": "2025-10-08T00:14:53.111648",
+      "local_path": "data/pdfs/99-050IRGP2010MilitaryTrain.pdf"
+    }
+  },
+  "total_files": 73,
+  "failed_downloads": [
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/Sequestration/Unclassified_Published_Sequestration_Final.pdf",
+      "filename": "Unclassified_Published_Sequestration_Final.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/Sequestration/Unclassified_Published_Sequestration_Final.pdf",
+      "timestamp": "2025-10-07T19:40:12.553178"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2017_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2017_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/FY_2017_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "timestamp": "2025-10-07T19:45:33.659880"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2015_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2015_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/FY_2015_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "timestamp": "2025-10-07T19:46:45.196227"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2011_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2011_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/FY_2011_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "timestamp": "2025-10-07T19:49:05.310332"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2010_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2010_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/FY_2010_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "timestamp": "2025-10-07T19:49:41.164903"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2009_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2009_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/FY_2009_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "timestamp": "2025-10-07T19:50:17.600724"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/FY_2008_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "filename": "FY_2008_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/FY_2008_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "timestamp": "2025-10-07T19:50:53.148503"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/04-38_PA_Force_Protection.pdf",
+      "filename": "04-38_PA_Force_Protection.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/04-38_PA_Force_Protection.pdf",
+      "timestamp": "2025-10-07T19:51:29.418078"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-01_PA_Army_ULLS.pdf",
+      "filename": "05-01_PA_Army_ULLS.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-01_PA_Army_ULLS.pdf",
+      "timestamp": "2025-10-07T19:52:05.322285"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-02_PA_Army_Force_Protection.pdf",
+      "filename": "05-02_PA_Army_Force_Protection.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-02_PA_Army_Force_Protection.pdf",
+      "timestamp": "2025-10-07T19:52:08.114759"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-03_PA_Next_Deployers_Army.pdf",
+      "filename": "05-03_PA_Next_Deployers_Army.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-03_PA_Next_Deployers_Army.pdf",
+      "timestamp": "2025-10-07T19:52:10.528096"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-04_PA_LAIRCM.pdf",
+      "filename": "05-04_PA_LAIRCM.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-04_PA_LAIRCM.pdf",
+      "timestamp": "2025-10-07T19:52:13.409784"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-05_PA_MC_GWOT.pdf",
+      "filename": "05-05_PA_MC_GWOT.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-05_PA_MC_GWOT.pdf",
+      "timestamp": "2025-10-07T19:52:15.847593"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-06_PA_HardSTOP.pdf",
+      "filename": "05-06_PA_HardSTOP.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-06_PA_HardSTOP.pdf",
+      "timestamp": "2025-10-07T19:52:49.336828"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-07_PA_ODCACA.pdf",
+      "filename": "05-07_PA_ODCACA.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-07_PA_ODCACA.pdf",
+      "timestamp": "2025-10-07T19:52:52.473152"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-08_PA_AF_Predator_UAV.pdf",
+      "filename": "05-08_PA_AF_Predator_UAV.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-08_PA_AF_Predator_UAV.pdf",
+      "timestamp": "2025-10-07T19:53:25.470890"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-09_PA_FCS.pdf",
+      "filename": "05-09_PA_FCS.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-09_PA_FCS.pdf",
+      "timestamp": "2025-10-07T19:53:28.336355"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-10_PA_ARH.pdf",
+      "filename": "05-10_PA_ARH.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-10_PA_ARH.pdf",
+      "timestamp": "2025-10-07T19:54:00.916294"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-11_PA_ODCACA_35M.pdf",
+      "filename": "05-11_PA_ODCACA_35M.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-11_PA_ODCACA_35M.pdf",
+      "timestamp": "2025-10-07T19:54:33.252924"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-12_PA%20Denial.pdf",
+      "filename": "05-12_PA%20Denial.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-12_PA%20Denial.pdf",
+      "timestamp": "2025-10-07T19:55:09.529597"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-13_PA_CEP.pdf",
+      "filename": "05-13_PA_CEP.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-13_PA_CEP.pdf",
+      "timestamp": "2025-10-07T19:55:45.299762"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-14_PA_DSOC_to_DHRA.pdf",
+      "filename": "05-14_PA_DSOC_to_DHRA.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-14_PA_DSOC_to_DHRA.pdf",
+      "timestamp": "2025-10-07T19:56:21.209146"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-15_PA_EA_6B.pdf",
+      "filename": "05-15_PA_EA_6B.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-15_PA_EA_6B.pdf",
+      "timestamp": "2025-10-07T19:56:57.346809"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-16_PA_H_1_Upgrades.pdf",
+      "filename": "05-16_PA_H_1_Upgrades.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-16_PA_H_1_Upgrades.pdf",
+      "timestamp": "2025-10-07T19:57:00.007645"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-18_PA_GFEBS.pdf",
+      "filename": "05-18_PA_GFEBS.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-18_PA_GFEBS.pdf",
+      "timestamp": "2025-10-07T19:57:37.149988"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-19_PA_ECSS.pdf",
+      "filename": "05-19_PA_ECSS.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-19_PA_ECSS.pdf",
+      "timestamp": "2025-10-07T19:58:13.731688"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-20_PA_UH_60_Blackhawk.pdf",
+      "filename": "05-20_PA_UH_60_Blackhawk.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-20_PA_UH_60_Blackhawk.pdf",
+      "timestamp": "2025-10-07T19:58:49.437650"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-21_PA_Longbow_Apache.pdf",
+      "filename": "05-21_PA_Longbow_Apache.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-21_PA_Longbow_Apache.pdf",
+      "timestamp": "2025-10-07T19:59:25.727636"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-22_PA_Trusted_Foundry.pdf",
+      "filename": "05-22_PA_Trusted_Foundry.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-22_PA_Trusted_Foundry.pdf",
+      "timestamp": "2025-10-07T20:00:01.257733"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-23_PA_NFAC.pdf",
+      "filename": "05-23_PA_NFAC.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-23_PA_NFAC.pdf",
+      "timestamp": "2025-10-07T20:00:37.449439"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-24_PA_JTRS.pdf",
+      "filename": "05-24_PA_JTRS.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-24_PA_JTRS.pdf",
+      "timestamp": "2025-10-07T20:01:13.300007"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-25_PA_FCS.pdf",
+      "filename": "05-25_PA_FCS.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-25_PA_FCS.pdf",
+      "timestamp": "2025-10-07T20:01:49.199905"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-26_PA_AFR_Pay_Rate.pdf",
+      "filename": "05-26_PA_AFR_Pay_Rate.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-26_PA_AFR_Pay_Rate.pdf",
+      "timestamp": "2025-10-07T20:02:25.141981"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-27_PA_Army_Requirements.pdf",
+      "filename": "05-27_PA_Army_Requirements.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-27_PA_Army_Requirements.pdf",
+      "timestamp": "2025-10-07T20:03:01.285463"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-30_PA_VPP.pdf",
+      "filename": "05-30_PA_VPP.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-30_PA_VPP.pdf",
+      "timestamp": "2025-10-07T20:04:25.513221"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-31_PA_GPS.pdf",
+      "filename": "05-31_PA_GPS.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-31_PA_GPS.pdf",
+      "timestamp": "2025-10-07T20:05:01.474438"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-32_PA_DIMHRS_Cancelled.pdf",
+      "filename": "05-32_PA_DIMHRS_Cancelled.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-32_PA_DIMHRS_Cancelled.pdf",
+      "timestamp": "2025-10-07T20:05:37.644367"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-33_PA_SOCOM.pdf",
+      "filename": "05-33_PA_SOCOM.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-33_PA_SOCOM.pdf",
+      "timestamp": "2025-10-07T20:06:13.517913"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-34_PA_Aviation_Restructure.pdf",
+      "filename": "05-34_PA_Aviation_Restructure.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-34_PA_Aviation_Restructure.pdf",
+      "timestamp": "2025-10-07T20:06:49.118821"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-35_PA_MilPers_Restoral.pdf",
+      "filename": "05-35_PA_MilPers_Restoral.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-35_PA_MilPers_Restoral.pdf",
+      "timestamp": "2025-10-07T20:06:52.350325"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-36_PA_FMTV.pdf",
+      "filename": "05-36_PA_FMTV.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-36_PA_FMTV.pdf",
+      "timestamp": "2025-10-07T20:07:25.172574"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-38_PA_Omnibus_Revised_Sep15.pdf",
+      "filename": "05-38_PA_Omnibus_Revised_Sep15.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-38_PA_Omnibus_Revised_Sep15.pdf",
+      "timestamp": "2025-10-07T20:08:03.932441"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-39_PA_NSA_DCP.pdf",
+      "filename": "05-39_PA_NSA_DCP.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-39_PA_NSA_DCP.pdf",
+      "timestamp": "2025-10-07T20:08:06.954172"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-40_PA_Aviation%20Restructure.pdf",
+      "filename": "05-40_PA_Aviation%20Restructure.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-40_PA_Aviation%20Restructure.pdf",
+      "timestamp": "2025-10-07T20:08:09.374202"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-41_PA_Stryker_Withdrawn.pdf",
+      "filename": "05-41_PA_Stryker_Withdrawn.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-41_PA_Stryker_Withdrawn.pdf",
+      "timestamp": "2025-10-07T20:08:12.461101"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-42_PA_SOCOM.pdf",
+      "filename": "05-42_PA_SOCOM.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-42_PA_SOCOM.pdf",
+      "timestamp": "2025-10-07T20:08:14.902124"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-43_PA_DWCF_Transfer.pdf",
+      "filename": "05-43_PA_DWCF_Transfer.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-43_PA_DWCF_Transfer.pdf",
+      "timestamp": "2025-10-07T20:08:49.201454"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-44_PA_Denial.pdf",
+      "filename": "05-44_PA_Denial.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-44_PA_Denial.pdf",
+      "timestamp": "2025-10-07T20:09:25.105274"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-45_PA_DWCF_Navy_150M.pdf",
+      "filename": "05-45_PA_DWCF_Navy_150M.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-45_PA_DWCF_Navy_150M.pdf",
+      "timestamp": "2025-10-07T20:10:01.174850"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-46_R_PA_Army_Critical_Needs.pdf",
+      "filename": "05-46_R_PA_Army_Critical_Needs.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-46_R_PA_Army_Critical_Needs.pdf",
+      "timestamp": "2025-10-07T20:10:04.439205"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-47_PA_DWCF_Army_Transfer.pdf",
+      "filename": "05-47_PA_DWCF_Army_Transfer.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-47_PA_DWCF_Army_Transfer.pdf",
+      "timestamp": "2025-10-07T20:10:37.397211"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-48_PA_HMMWV_Withdrawn.pdf",
+      "filename": "05-48_PA_HMMWV_Withdrawn.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-48_PA_HMMWV_Withdrawn.pdf",
+      "timestamp": "2025-10-07T20:11:13.233175"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-49_PA_DWCF_AF_Transfer_155M.pdf",
+      "filename": "05-49_PA_DWCF_AF_Transfer_155M.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-49_PA_DWCF_AF_Transfer_155M.pdf",
+      "timestamp": "2025-10-07T20:11:49.163623"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-50_PA_MarineCorps_Comm_IT_Needs.pdf",
+      "filename": "05-50_PA_MarineCorps_Comm_IT_Needs.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/prior1415s/05-50_PA_MarineCorps_Comm_IT_Needs.pdf",
+      "timestamp": "2025-10-07T20:12:25.331265"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-001_IR_C_FCFCD.pdf",
+      "filename": "05-001_IR_C_FCFCD.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-001_IR_C_FCFCD.pdf",
+      "timestamp": "2025-10-07T20:13:01.384572"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-001_IR_P3_R.pdf",
+      "filename": "05-001_IR_P3_R.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-001_IR_P3_R.pdf",
+      "timestamp": "2025-10-07T20:13:37.443910"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-002_IR_C_FCFCD.pdf",
+      "filename": "05-002_IR_C_FCFCD.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-002_IR_C_FCFCD.pdf",
+      "timestamp": "2025-10-07T20:14:12.946438"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-002_IR_Drug.pdf",
+      "filename": "05-002_IR_Drug.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-002_IR_Drug.pdf",
+      "timestamp": "2025-10-07T20:14:49.108201"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-003_IR_C_FCFCD.pdf",
+      "filename": "05-003_IR_C_FCFCD.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-003_IR_C_FCFCD.pdf",
+      "timestamp": "2025-10-07T20:15:25.158243"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-003_IR_IED.pdf",
+      "filename": "05-003_IR_IED.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-003_IR_IED.pdf",
+      "timestamp": "2025-10-07T20:16:00.988884"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-005_IR_C_FCFCD.pdf",
+      "filename": "05-005_IR_C_FCFCD.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-005_IR_C_FCFCD.pdf",
+      "timestamp": "2025-10-07T20:16:51.759623"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-005_IR_Drug.pdf",
+      "filename": "05-005_IR_Drug.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-005_IR_Drug.pdf",
+      "timestamp": "2025-10-07T20:16:55.009460"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-006_IR_FCF.pdf",
+      "filename": "05-006_IR_FCF.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-006_IR_FCF.pdf",
+      "timestamp": "2025-10-07T20:16:57.833987"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-007_IR_DHP.pdf",
+      "filename": "05-007_IR_DHP.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-007_IR_DHP.pdf",
+      "timestamp": "2025-10-07T20:17:00.266866"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-008_IR_IFF_1.8B.pdf",
+      "filename": "05-008_IR_IFF_1.8B.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-008_IR_IFF_1.8B.pdf",
+      "timestamp": "2025-10-07T20:17:02.788755"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-009_IR_ER.pdf",
+      "filename": "05-009_IR_ER.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-009_IR_ER.pdf",
+      "timestamp": "2025-10-07T20:17:05.301709"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-010_IR_Virginia_Class_Sub.pdf",
+      "filename": "05-010_IR_Virginia_Class_Sub.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-010_IR_Virginia_Class_Sub.pdf",
+      "timestamp": "2025-10-07T20:17:07.844657"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-011_IR_RRNS_IFF_75M.pdf",
+      "filename": "05-011_IR_RRNS_IFF_75M.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-011_IR_RRNS_IFF_75M.pdf",
+      "timestamp": "2025-10-07T20:17:10.268710"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-012_IR_ECM_Shortstop.pdf",
+      "filename": "05-012_IR_ECM_Shortstop.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-012_IR_ECM_Shortstop.pdf",
+      "timestamp": "2025-10-07T20:17:12.940467"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-013_IR_IED_17M_IFF.pdf",
+      "filename": "05-013_IR_IED_17M_IFF.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-013_IR_IED_17M_IFF.pdf",
+      "timestamp": "2025-10-07T20:17:15.418033"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-014_IR_UAV_AC130.pdf",
+      "filename": "05-014_IR_UAV_AC130.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-014_IR_UAV_AC130.pdf",
+      "timestamp": "2025-10-07T20:17:17.995215"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-015_IR_Congress_Adds_Navy.pdf",
+      "filename": "05-015_IR_Congress_Adds_Navy.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-015_IR_Congress_Adds_Navy.pdf",
+      "timestamp": "2025-10-07T20:17:20.607351"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-016_IR_IFF_90M_GWOT.pdf",
+      "filename": "05-016_IR_IFF_90M_GWOT.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-016_IR_IFF_90M_GWOT.pdf",
+      "timestamp": "2025-10-07T20:17:23.109457"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-018_IR_UNOLS.pdf",
+      "filename": "05-018_IR_UNOLS.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-018_IR_UNOLS.pdf",
+      "timestamp": "2025-10-07T20:17:25.780567"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-019_IR_NSA_Transfer.pdf",
+      "filename": "05-019_IR_NSA_Transfer.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-019_IR_NSA_Transfer.pdf",
+      "timestamp": "2025-10-07T20:17:28.442230"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-020_IR_Railgun.pdf",
+      "filename": "05-020_IR_Railgun.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-020_IR_Railgun.pdf",
+      "timestamp": "2025-10-07T20:17:30.881832"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-021_IR_IED_7M.pdf",
+      "filename": "05-021_IR_IED_7M.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-021_IR_IED_7M.pdf",
+      "timestamp": "2025-10-07T20:17:33.342923"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-022_IR_Hurricane_Expenses.pdf",
+      "filename": "05-022_IR_Hurricane_Expenses.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-022_IR_Hurricane_Expenses.pdf",
+      "timestamp": "2025-10-07T20:17:36.015689"
+    },
+    {
+      "url": "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-023_IR_Medical_Technology.pdf",
+      "filename": "05-023_IR_Medical_Technology.pdf",
+      "error": "404 Client Error: Not Found for url: https://comptroller.war.gov/Portals/45/Documents/execution/reprogramming/fy2005/ir1415s/05-023_IR_Medical_Technology.pdf",
+      "timestamp": "2025-10-07T20:17:38.725545"
+    }
+  ],
+  "processed_files": {
+    "PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018.pdf": {
+      "pdf_path": "data/pdfs/PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018.pdf",
+      "csv_path": "data/csv/PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "Budget_Accounts-Functional_Titles.pdf": {
+      "pdf_path": "data/pdfs/Budget_Accounts-Functional_Titles.pdf",
+      "csv_path": "data/csv/Budget_Accounts-Functional_Titles_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2024_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2024_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2024_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "05-28_PA_Nuclear_Weapons.pdf": {
+      "pdf_path": "data/pdfs/05-28_PA_Nuclear_Weapons.pdf",
+      "csv_path": "data/csv/05-28_PA_Nuclear_Weapons_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "05-17_PA_F_22_Aircraft.pdf": {
+      "pdf_path": "data/pdfs/05-17_PA_F_22_Aircraft.pdf",
+      "csv_path": "data/csv/05-17_PA_F_22_Aircraft_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "05-37_PA_Medical_Technology.pdf": {
+      "pdf_path": "data/pdfs/05-37_PA_Medical_Technology.pdf",
+      "csv_path": "data/csv/05-37_PA_Medical_Technology_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2016_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2016_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2016_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2025_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2025_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2025_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "05-004_IR_C_FCFCD.pdf": {
+      "pdf_path": "data/pdfs/05-004_IR_C_FCFCD.pdf",
+      "csv_path": "data/csv/05-004_IR_C_FCFCD_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2014_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2014_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2014_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "Reprogramming_Overview.pdf": {
+      "pdf_path": "data/pdfs/Reprogramming_Overview.pdf",
+      "csv_path": "data/csv/Reprogramming_Overview_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2021_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2021_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2021_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "05-004_IR_IED.pdf": {
+      "pdf_path": "data/pdfs/05-004_IR_IED.pdf",
+      "csv_path": "data/csv/05-004_IR_IED_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2012_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2012_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2012_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2018_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2018_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2018_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2025_MILCON_Operating_Plan_signed_20250501.pdf": {
+      "pdf_path": "data/pdfs/FY_2025_MILCON_Operating_Plan_signed_20250501.pdf",
+      "csv_path": "data/csv/FY_2025_MILCON_Operating_Plan_signed_20250501_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "03_06.pdf": {
+      "pdf_path": "data/pdfs/03_06.pdf",
+      "csv_path": "data/csv/03_06_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2023_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2023_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2023_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2020_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2020_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2020_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2013_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2013_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2013_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2019_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2019_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2019_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "FY_2022_DD_1414_Base_for_Reprogramming_Actions.pdf": {
+      "pdf_path": "data/pdfs/FY_2022_DD_1414_Base_for_Reprogramming_Actions.pdf",
+      "csv_path": "data/csv/FY_2022_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    },
+    "05-29_PA_B_2_WTA.pdf": {
+      "pdf_path": "data/pdfs/05-29_PA_B_2_WTA.pdf",
+      "csv_path": "data/csv/05-29_PA_B_2_WTA_extracted.csv",
+      "csv_generated": true,
+      "validated": false
+    }
+  },
+  "scraping_stats": {
+    "pages_scraped": 90,
+    "pdfs_found": 3,
+    "pdfs_downloaded": 0,
+    "errors": 2
+  },
+  "scraped_urls": [
+    "https://comptroller.defense.gov/Portals/45/Documents/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy1999/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2020/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1999/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2012/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2016/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy1997/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2023/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2023/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2009/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2013/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2007/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2000/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2017/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy1998/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2001/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2022/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2005/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2004/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2001/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2019/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2020/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2012/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2011/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2012/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2022/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2000/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2004/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1997/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2016/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2018/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2025/",
+    "https://comptroller.defense.gov/Budget-Execution/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2011/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2006/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2008/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2009/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy1998/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2006/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2003/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2008/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2017/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2007/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2014/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2003/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2009/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2014/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2010/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2013/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy1999/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2019/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2007/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2002/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2016/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2005/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2019/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2024/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2015/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy1998/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2004/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2021/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2023/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2014/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2025/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2018/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2015/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2002/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2020/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2010/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2013/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2021/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2021/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2010/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2024/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2015/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2001/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy1997/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2018/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2000/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2002/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/archive/fy2008/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2005/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2006/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2017/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2022/",
+    "https://comptroller.defense.gov/Portals/45/Documents/execution/reprogramming/fy2024/",
+    "https://comptroller.defense.gov/Budget-Execution/Reprogramming/fy2025/"
+  ],
+  "pdf_urls": []
+}
