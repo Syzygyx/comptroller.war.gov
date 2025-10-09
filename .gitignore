@@ -34,6 +34,7 @@ pdfs/
 *.csv
 !example_output.csv
 data/
+!docs/data/
 output/
 
 # IDEs

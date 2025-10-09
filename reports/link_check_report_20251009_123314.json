@@ -1,0 +1,2386 @@
+{
+  "check_summary": {
+    "total_pages_checked": 10,
+    "successful_checks": 10,
+    "failed_checks": 0,
+    "check_date": "2025-10-09T12:33:14.525391"
+  },
+  "link_analysis": {
+    "total_links_checked": 209,
+    "working_links": 52,
+    "broken_links": 107,
+    "health_score": 24.880382775119617,
+    "broken_by_type": {
+      "broken": [
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2018_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2018_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2012_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2012_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2025_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2025_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2016_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2016_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2021_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2021_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2023_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2023_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2014_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2014_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2013_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2013_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2024_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2024_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2022_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2022_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2020_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2020_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2019_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2019_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.json",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.json",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_fast_data.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_fast_data.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-004_IR_C_FCFCD_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-004_IR_C_FCFCD_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-17_PA_F_22_Aircraft_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-17_PA_F_22_Aircraft_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-004_IR_IED_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-004_IR_IED_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-37_PA_Medical_Technology_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-37_PA_Medical_Technology_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/03_06_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/03_06_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-29_PA_B_2_WTA_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-29_PA_B_2_WTA_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_summary.json",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_summary.json",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.csv",
+          "text": "Download CSV",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.json",
+          "text": "Download JSON",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_analysis_report.html",
+          "text": "View Full Report",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        }
+      ],
+      "missing_data_file": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ]
+    },
+    "most_broken_links": [
+      [
+        "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        12
+      ],
+      [
+        "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        10
+      ],
+      [
+        "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        10
+      ],
+      [
+        "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        10
+      ],
+      [
+        "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        10
+      ],
+      [
+        "https://syzygyx.github.io/chat",
+        6
+      ],
+      [
+        "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.csv",
+        3
+      ],
+      [
+        "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.json",
+        3
+      ],
+      [
+        "https://syzygyx.github.io/DD1414/data/csv/FY_2018_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+        2
+      ],
+      [
+        "https://syzygyx.github.io/DD1414/data/csv/FY_2012_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+        2
+      ]
+    ],
+    "critical_issues": [
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        "text": "Data file: /data/validation/validation_summary.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/validation/validation_summary.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "text": "Data file: /data/embeddings/chunks.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/chunks.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        "text": "Data file: /data/embeddings/embeddings.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/embeddings.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        "text": "Data file: /data/validation/validation_summary.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/validation/validation_summary.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "text": "Data file: /data/embeddings/chunks.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/chunks.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        "text": "Data file: /data/embeddings/embeddings.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/embeddings.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        "text": "Data file: /data/validation/validation_summary.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/validation/validation_summary.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "text": "Data file: /data/embeddings/chunks.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/chunks.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        "text": "Data file: /data/embeddings/embeddings.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/embeddings.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        "text": "Data file: /data/validation/validation_summary.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/validation/validation_summary.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "text": "Data file: /data/embeddings/chunks.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/chunks.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        "text": "Data file: /data/embeddings/embeddings.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/embeddings.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        "text": "Data file: /data/validation/validation_summary.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/validation/validation_summary.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "text": "Data file: /data/embeddings/chunks.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/chunks.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        "text": "Data file: /data/embeddings/embeddings.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/embeddings.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        "text": "Data file: /data/validation/validation_summary.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/validation/validation_summary.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "text": "Data file: /data/embeddings/chunks.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/chunks.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        "text": "Data file: /data/embeddings/embeddings.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/embeddings.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        "text": "Data file: /data/validation/validation_summary.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/validation/validation_summary.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "text": "Data file: /data/embeddings/chunks.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/chunks.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        "text": "Data file: /data/embeddings/embeddings.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/embeddings.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        "text": "Data file: /data/validation/validation_summary.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/validation/validation_summary.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "text": "Data file: /data/embeddings/chunks.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/chunks.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        "text": "Data file: /data/embeddings/embeddings.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/embeddings.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        "text": "Data file: /data/validation/validation_summary.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/validation/validation_summary.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "text": "Data file: /data/embeddings/chunks.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/chunks.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        "text": "Data file: /data/embeddings/embeddings.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/embeddings.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+        "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+        "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+        "text": "Data file: /data/validation/validation_summary.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/validation/validation_summary.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "text": "Data file: /data/embeddings/chunks.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/chunks.json"
+      },
+      {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+        "text": "Data file: /data/embeddings/embeddings.json",
+        "status": 404,
+        "type": "missing_data_file",
+        "error": "Missing data file: /data/embeddings/embeddings.json"
+      }
+    ]
+  },
+  "page_results": [
+    {
+      "url": "https://syzygyx.github.io/DD1414/",
+      "page_path": "/",
+      "status": "success",
+      "timestamp": "2025-10-09T12:30:46.900964",
+      "broken_links": [
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ],
+      "working_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/index.html",
+          "text": "Dashboard",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/browse.html",
+          "text": "Browse Data",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_index.html",
+          "text": "DD1414 Index",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_pdf_csv_comparison.html",
+          "text": "PDF/CSV Comparison",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/progress.html",
+          "text": "Processing Log",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/sankey.html",
+          "text": "Budget Flow",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_dashboard.html",
+          "text": "View Dashboard",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_sankey.html",
+          "text": "View Sankey",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_timeline.html",
+          "text": "View Timeline",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_organizations.html",
+          "text": "View Organizations",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/browse.html",
+          "text": "Browse All Data",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Download Metadata",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Data file: /data/metadata.json",
+          "status": 200,
+          "type": "data_file"
+        }
+      ],
+      "link_check_summary": {
+        "total_checked": 21,
+        "working": 13,
+        "broken": 6,
+        "broken_percentage": 28.57142857142857
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/browse.html",
+      "page_path": "/browse.html",
+      "status": "success",
+      "timestamp": "2025-10-09T12:31:36.985959",
+      "broken_links": [
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2018_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2018_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2012_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2012_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2025_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2025_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2016_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2016_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2021_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2021_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2023_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2023_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2014_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2014_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2013_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2013_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2024_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2024_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2022_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2022_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2020_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2020_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2019_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/FY_2019_DD_1414_Base_for_Reprogramming_Actions_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.json",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.json",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_fast_data.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_fast_data.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-004_IR_C_FCFCD_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-004_IR_C_FCFCD_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-17_PA_F_22_Aircraft_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-17_PA_F_22_Aircraft_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-004_IR_IED_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-004_IR_IED_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-37_PA_Medical_Technology_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-37_PA_Medical_Technology_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/03_06_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/03_06_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-29_PA_B_2_WTA_extracted.csv",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/05-29_PA_B_2_WTA_extracted.csv",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_summary.json",
+          "text": "📥 Download",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_summary.json",
+          "text": "👁️ View",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ],
+      "working_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/index.html",
+          "text": "Dashboard",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/browse.html",
+          "text": "Browse Data",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_index.html",
+          "text": "DD1414 Index",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_pdf_csv_comparison.html",
+          "text": "PDF/CSV Comparison",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/progress.html",
+          "text": "Processing Log",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/sankey.html",
+          "text": "Budget Flow",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "📥 Download",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "👁️ View",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Data file: /data/metadata.json",
+          "status": 200,
+          "type": "data_file"
+        }
+      ],
+      "link_check_summary": {
+        "total_checked": 63,
+        "working": 9,
+        "broken": 54,
+        "broken_percentage": 85.71428571428571
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/dd1414_index.html",
+      "page_path": "/dd1414_index.html",
+      "status": "success",
+      "timestamp": "2025-10-09T12:31:50.703992",
+      "broken_links": [
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ],
+      "working_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/index.html",
+          "text": "Dashboard",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/browse.html",
+          "text": "Browse Data",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_index.html",
+          "text": "DD1414 Index",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/progress.html",
+          "text": "Processing Log",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/sankey.html",
+          "text": "Budget Flow",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Data file: /data/metadata.json",
+          "status": 200,
+          "type": "data_file"
+        }
+      ],
+      "link_check_summary": {
+        "total_checked": 52,
+        "working": 6,
+        "broken": 6,
+        "broken_percentage": 11.538461538461538
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/dd1414_pdf_csv_comparison.html",
+      "page_path": "/dd1414_pdf_csv_comparison.html",
+      "status": "success",
+      "timestamp": "2025-10-09T12:32:09.381858",
+      "broken_links": [
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ],
+      "working_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/index.html",
+          "text": "Dashboard",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/browse.html",
+          "text": "Browse Data",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_index.html",
+          "text": "DD1414 Index",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_pdf_csv_comparison.html",
+          "text": "PDF/CSV Comparison",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/progress.html",
+          "text": "Processing Log",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/sankey.html",
+          "text": "Budget Flow",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_pdf_csv_comparison.html#",
+          "text": "📥 Download PDF",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_pdf_csv_comparison.html#",
+          "text": "📊 Download CSV",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_pdf_csv_comparison.html#",
+          "text": "🔗 View on GitHub",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Data file: /data/metadata.json",
+          "status": 200,
+          "type": "data_file"
+        }
+      ],
+      "link_check_summary": {
+        "total_checked": 16,
+        "working": 10,
+        "broken": 6,
+        "broken_percentage": 37.5
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/dd1414_dashboard.html",
+      "page_path": "/dd1414_dashboard.html",
+      "status": "success",
+      "timestamp": "2025-10-09T12:32:20.340270",
+      "broken_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.csv",
+          "text": "Download CSV",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/dd1414_csv/dd1414_enhanced_data.json",
+          "text": "Download JSON",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/dd1414_analysis_report.html",
+          "text": "View Full Report",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ],
+      "working_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Data file: /data/metadata.json",
+          "status": 200,
+          "type": "data_file"
+        }
+      ],
+      "link_check_summary": {
+        "total_checked": 12,
+        "working": 1,
+        "broken": 8,
+        "broken_percentage": 66.66666666666666
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/dd1414_sankey.html",
+      "page_path": "/dd1414_sankey.html",
+      "status": "success",
+      "timestamp": "2025-10-09T12:32:28.970178",
+      "broken_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ],
+      "working_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Data file: /data/metadata.json",
+          "status": 200,
+          "type": "data_file"
+        }
+      ],
+      "link_check_summary": {
+        "total_checked": 7,
+        "working": 1,
+        "broken": 5,
+        "broken_percentage": 71.42857142857143
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/dd1414_timeline.html",
+      "page_path": "/dd1414_timeline.html",
+      "status": "success",
+      "timestamp": "2025-10-09T12:32:37.223119",
+      "broken_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ],
+      "working_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Data file: /data/metadata.json",
+          "status": 200,
+          "type": "data_file"
+        }
+      ],
+      "link_check_summary": {
+        "total_checked": 7,
+        "working": 1,
+        "broken": 5,
+        "broken_percentage": 71.42857142857143
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/dd1414_organizations.html",
+      "page_path": "/dd1414_organizations.html",
+      "status": "success",
+      "timestamp": "2025-10-09T12:32:45.417542",
+      "broken_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ],
+      "working_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Data file: /data/metadata.json",
+          "status": 200,
+          "type": "data_file"
+        }
+      ],
+      "link_check_summary": {
+        "total_checked": 7,
+        "working": 1,
+        "broken": 5,
+        "broken_percentage": 71.42857142857143
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/progress.html",
+      "page_path": "/progress.html",
+      "status": "success",
+      "timestamp": "2025-10-09T12:32:58.276234",
+      "broken_links": [
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ],
+      "working_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/index.html",
+          "text": "Dashboard",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/browse.html",
+          "text": "Browse Data",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/progress.html",
+          "text": "Processing Log",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/sankey.html",
+          "text": "Budget Flow",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Data file: /data/metadata.json",
+          "status": 200,
+          "type": "data_file"
+        }
+      ],
+      "link_check_summary": {
+        "total_checked": 12,
+        "working": 5,
+        "broken": 6,
+        "broken_percentage": 50.0
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/sankey.html",
+      "page_path": "/sankey.html",
+      "status": "success",
+      "timestamp": "2025-10-09T12:33:13.481003",
+      "broken_links": [
+        {
+          "url": "https://syzygyx.github.io/chat",
+          "text": "Chat",
+          "status": 404,
+          "type": "broken",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/Reprogramming_Overview_extracted.csv",
+          "text": "Data file: /data/csv/Reprogramming_Overview_extracted.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/Reprogramming_Overview_extracted.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/csv/dd1414_enhanced_data.csv",
+          "text": "Data file: /data/csv/dd1414_enhanced_data.csv",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/csv/dd1414_enhanced_data.csv"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/validation/validation_summary.json",
+          "text": "Data file: /data/validation/validation_summary.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/validation/validation_summary.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+          "text": "Data file: /data/embeddings/chunks.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/chunks.json"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/embeddings/embeddings.json",
+          "text": "Data file: /data/embeddings/embeddings.json",
+          "status": 404,
+          "type": "missing_data_file",
+          "error": "Missing data file: /data/embeddings/embeddings.json"
+        }
+      ],
+      "working_links": [
+        {
+          "url": "https://syzygyx.github.io/DD1414/index.html",
+          "text": "Dashboard",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/browse.html",
+          "text": "Browse Data",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/progress.html",
+          "text": "Processing Log",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/sankey.html",
+          "text": "Budget Flow",
+          "status": 200,
+          "type": "working"
+        },
+        {
+          "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+          "text": "Data file: /data/metadata.json",
+          "status": 200,
+          "type": "data_file"
+        }
+      ],
+      "link_check_summary": {
+        "total_checked": 12,
+        "working": 5,
+        "broken": 6,
+        "broken_percentage": 50.0
+      }
+    }
+  ]
+}
