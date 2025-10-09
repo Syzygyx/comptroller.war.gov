@@ -413,6 +413,49 @@
             margin-top: 20px;
         }
 
+        .quick-access-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .quick-access-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .quick-access-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .quick-access-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .quick-access-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .quick-access-desc {
+            color: #6c757d;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
         .stat-item {
             text-align: center;
             padding: 15px;
@@ -500,6 +543,33 @@
                 </div>
             </div>
 
+            <!-- Quick Access -->
+            <div class="section">
+                <h2>🚀 Quick Access</h2>
+                <div class="quick-access-grid">
+                    <a href="dd1414_index.html" class="quick-access-card">
+                        <div class="quick-access-icon">📋</div>
+                        <div class="quick-access-title">DD1414 Index</div>
+                        <div class="quick-access-desc">Browse all DD1414 files by year</div>
+                    </a>
+                    <a href="dd1414_pdf_csv_comparison.html" class="quick-access-card">
+                        <div class="quick-access-icon">📄</div>
+                        <div class="quick-access-title">PDF/CSV Comparison</div>
+                        <div class="quick-access-desc">Compare PDFs with extracted data</div>
+                    </a>
+                    <a href="browse.html" class="quick-access-card">
+                        <div class="quick-access-icon">📊</div>
+                        <div class="quick-access-title">Data Browser</div>
+                        <div class="quick-access-desc">Explore all extracted data files</div>
+                    </a>
+                    <a href="/chat" class="quick-access-card">
+                        <div class="quick-access-icon">💬</div>
+                        <div class="quick-access-title">AI Chat</div>
+                        <div class="quick-access-desc">Ask questions about the data</div>
+                    </a>
+                </div>
+            </div>
+
             <!-- Processing Progress -->
             <div class="section">
                 <h2>Processing Progress</h2>
@@ -570,6 +640,11 @@
                         <h3>🏛️ Organizations</h3>
                         <p>Distribution of documents by organization</p>
                         <a href="dd1414_organizations.html" class="btn btn-secondary">View Organizations</a>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>📄 PDF to CSV Comparison</h3>
+                        <p>Side-by-side comparison of original PDFs and extracted CSV data</p>
+                        <a href="dd1414_pdf_csv_comparison.html" class="btn btn-primary">Compare Files</a>
                     </div>
                 </div>
                 <div class="stats-summary">

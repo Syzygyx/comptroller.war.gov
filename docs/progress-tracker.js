@@ -106,12 +106,12 @@ class ProgressTracker {
         this.tasks = [
             {
                 id: 'download_dd1414',
-                name: 'Download DD1414 Documents (1997-Present)',
+                name: 'Download DD1414 Documents (2007-Present)',
                 start: '2024-01-01',
                 end: '2024-12-31',
                 progress: this.calculateDD1414Progress(totalYears),
                 dependencies: [],
-                description: `Download all DD1414 Base for Reprogramming Actions documents from 1997 to present (${totalYears} years total)`
+                description: `Download all DD1414 Base for Reprogramming Actions documents from 2007 to present (19 years total - DD1414 form introduced in FY 2007)`
             },
             {
                 id: 'download_other_docs',
@@ -193,7 +193,9 @@ class ProgressTracker {
      */
     calculateDD1414Progress(totalYears) {
         const dd1414Count = (this.fileAnalysis && this.fileAnalysis.pdfs && this.fileAnalysis.pdfs.dd1414) ? this.fileAnalysis.pdfs.dd1414 : 0;
-        return Math.min(100, Math.round((dd1414Count / totalYears) * 100));
+        // DD1414 form was introduced in FY 2007, so calculate based on 2007-2025 (19 years)
+        const dd1414Years = 19; // 2007-2025
+        return Math.min(100, Math.round((dd1414Count / dd1414Years) * 100));
     }
 
     /**
