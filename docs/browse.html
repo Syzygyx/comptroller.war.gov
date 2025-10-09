@@ -328,7 +328,7 @@
             <a href="dd1414_index.html">DD1414 Index</a>
             <a href="dd1414_pdf_csv_comparison.html">PDF/CSV Comparison</a>
             <a href="progress.html">Processing Log</a>
-            <a href="/chat">Chat</a>
+            <a href="chat.html">Chat</a>
             <a href="sankey.html">Budget Flow</a>
         </nav>
 
@@ -399,11 +399,20 @@
         const files = [
             // DD1414 Data Files
             {
+                name: "Reprogramming_Overview_extracted.csv",
+                type: "csv",
+                size: "1.2 MB",
+                date: "2024-10-09",
+                path: "data/csv/Reprogramming_Overview_extracted.csv",
+                description: "Overview of reprogramming actions extracted data",
+                records: 10
+            },
+            {
                 name: "dd1414_enhanced_data.csv",
                 type: "csv",
                 size: "2.1 MB",
                 date: "2024-10-09",
-                path: "data/dd1414_csv/dd1414_enhanced_data.csv",
+                path: "data/csv/dd1414_enhanced_data.csv",
                 description: "Enhanced DD1414 data with OCR processing",
                 records: 1250
             },
@@ -412,7 +421,7 @@
                 type: "csv", 
                 size: "1.8 MB",
                 date: "2024-10-09",
-                path: "data/dd1414_csv/dd1414_fast_data.csv",
+                path: "data/csv/dd1414_fast_data.csv",
                 description: "Fast-processed DD1414 data",
                 records: 1100
             },
@@ -421,7 +430,7 @@
                 type: "csv",
                 size: "1.5 MB", 
                 date: "2024-10-09",
-                path: "data/dd1414_csv/dd1414_data.csv",
+                path: "data/csv/dd1414_data.csv",
                 description: "Basic DD1414 data extraction",
                 records: 950
             },
@@ -430,7 +439,7 @@
                 type: "json",
                 size: "3.2 MB",
                 date: "2024-10-09", 
-                path: "data/dd1414_csv/dd1414_enhanced_data.json",
+                path: "data/csv/dd1414_enhanced_data.json",
                 description: "Enhanced DD1414 data in JSON format",
                 records: 1250
             },
@@ -439,7 +448,7 @@
                 type: "json",
                 size: "2.8 MB",
                 date: "2024-10-09",
-                path: "data/dd1414_csv/dd1414_fast_data.json", 
+                path: "data/csv/dd1414_fast_data.json", 
                 description: "Fast-processed DD1414 data in JSON format",
                 records: 1100
             },
@@ -448,7 +457,7 @@
                 type: "json",
                 size: "2.1 MB",
                 date: "2024-10-09",
-                path: "data/dd1414_csv/dd1414_data.json",
+                path: "data/csv/dd1414_data.json",
                 description: "Basic DD1414 data in JSON format", 
                 records: 950
             },
