@@ -194,7 +194,7 @@ class ProgressTracker {
      * Calculate DD1414 download progress
      */
     calculateDD1414Progress(totalYears) {
-        const dd1414Count = this.fileAnalysis.pdfs.dd1414 || 0;
+        const dd1414Count = (this.fileAnalysis && this.fileAnalysis.pdfs && this.fileAnalysis.pdfs.dd1414) ? this.fileAnalysis.pdfs.dd1414 : 0;
         return Math.min(100, Math.round((dd1414Count / totalYears) * 100));
     }
 
@@ -202,8 +202,8 @@ class ProgressTracker {
      * Calculate other documents progress
      */
     calculateOtherDocsProgress() {
-        const totalPDFs = this.fileAnalysis.pdfs.total || 0;
-        const dd1414Count = this.fileAnalysis.pdfs.dd1414 || 0;
+        const totalPDFs = (this.fileAnalysis && this.fileAnalysis.pdfs && this.fileAnalysis.pdfs.total) ? this.fileAnalysis.pdfs.total : 0;
+        const dd1414Count = (this.fileAnalysis && this.fileAnalysis.pdfs && this.fileAnalysis.pdfs.dd1414) ? this.fileAnalysis.pdfs.dd1414 : 0;
         const otherDocs = totalPDFs - dd1414Count;
         // Estimate we need about 50 other documents
         return Math.min(100, Math.round((otherDocs / 50) * 100));
@@ -222,9 +222,9 @@ class ProgressTracker {
      * Calculate CSV generation progress
      */
     calculateCSVProgress() {
-        const totalCSVs = this.fileAnalysis.csvs.total || 0;
-        const dd1414CSVs = this.fileAnalysis.csvs.dd1414 || 0;
-        const totalPDFs = this.fileAnalysis.pdfs.total || 0;
+        const totalCSVs = (this.fileAnalysis && this.fileAnalysis.csvs && this.fileAnalysis.csvs.total) ? this.fileAnalysis.csvs.total : 0;
+        const dd1414CSVs = (this.fileAnalysis && this.fileAnalysis.csvs && this.fileAnalysis.csvs.dd1414) ? this.fileAnalysis.csvs.dd1414 : 0;
+        const totalPDFs = (this.fileAnalysis && this.fileAnalysis.pdfs && this.fileAnalysis.pdfs.total) ? this.fileAnalysis.pdfs.total : 0;
         
         if (totalPDFs === 0) return 0;
         
