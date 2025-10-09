@@ -51,13 +51,13 @@
         nav a {
             color: #495057;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 8px 16px;
             border-radius: 5px;
-            transition: all 0.3s;
+            transition: background-color 0.3s;
         }
 
         nav a:hover, nav a.active {
-            background: #667eea;
+            background-color: #667eea;
             color: white;
         }
 
@@ -65,81 +65,212 @@
             padding: 40px;
         }
 
-        .filters {
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 10px;
-            margin-bottom: 30px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+
+        .data-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .category-header {
             display: flex;
-            gap: 15px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .category-icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+
+        .category-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .category-description {
+            color: #6c757d;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .file-list {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+        }
+
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid #f1f3f4;
+            transition: background-color 0.2s;
+        }
+
+        .file-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .file-item:last-child {
+            border-bottom: none;
+        }
+
+        .file-info {
+            flex: 1;
+        }
+
+        .file-name {
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+
+        .file-meta {
+            font-size: 0.85em;
+            color: #6c757d;
+        }
+
+        .file-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.85em;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5a6fd8;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+        }
+
+        .search-container {
+            margin-bottom: 30px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 25px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .filter-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
             flex-wrap: wrap;
         }
 
-        .filter-group {
-            flex: 1;
-            min-width: 200px;
-        }
-
-        .filter-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #495057;
-        }
-
-        .filter-group select,
-        .filter-group input {
-            width: 100%;
-            padding: 8px 12px;
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-            font-size: 0.95em;
-        }
-
-        .data-table {
-            overflow-x: auto;
+        .filter-tab {
+            padding: 8px 16px;
             background: #f8f9fa;
-            border-radius: 10px;
-            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9em;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #dee2e6;
-        }
-
-        th {
-            background: #2c3e50;
+        .filter-tab.active, .filter-tab:hover {
+            background: #667eea;
             color: white;
-            font-weight: 600;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        tr:hover {
-            background: #f8f9fa;
-        }
-
-        .download-btn {
-            background: #28a745;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 3px;
-            text-decoration: none;
-            font-size: 0.85em;
-            display: inline-block;
-        }
-
-        .download-btn:hover {
-            background: #218838;
+            border-color: #667eea;
         }
 
         .loading {
@@ -148,34 +279,51 @@
             color: #6c757d;
         }
 
-        .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #667eea;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
         }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        footer {
-            background: #f8f9fa;
-            padding: 20px;
+        .no-data {
             text-align: center;
+            padding: 40px;
             color: #6c757d;
-            border-top: 1px solid #dee2e6;
+        }
+
+        .file-size {
+            font-size: 0.8em;
+            color: #adb5bd;
+        }
+
+        .file-type-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #e9ecef;
+            color: #495057;
+            border-radius: 12px;
+            font-size: 0.75em;
+            margin-left: 8px;
+        }
+
+        .dd1414-badge {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .enhanced-badge {
+            background: #cce5ff;
+            color: #004085;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📊 Browse Extracted Data</h1>
+            <h1>📊 Data Browser</h1>
+            <p>Explore and download extracted data from Comptroller.war.gov</p>
         </header>
 
         <nav>
@@ -187,225 +335,341 @@
         </nav>
 
         <div class="content">
-            <!-- Filters -->
-            <div class="filters">
-                <div class="filter-group">
-                    <label for="branchFilter">Branch</label>
-                    <select id="branchFilter">
-                        <option value="">All Branches</option>
-                        <option value="Army">Army</option>
-                        <option value="Navy">Navy</option>
-                        <option value="Air Force">Air Force</option>
-                        <option value="Defense-Wide">Defense-Wide</option>
-                        <option value="Marines">Marines</option>
-                        <option value="Coast Guard">Coast Guard</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="categoryFilter">Category</label>
-                    <select id="categoryFilter">
-                        <option value="">All Categories</option>
-                        <option value="Operation and Maintenance">Operation and Maintenance</option>
-                        <option value="Procurement">Procurement</option>
-                        <option value="Weapons Procurement">Weapons Procurement</option>
-                        <option value="Missile Procurement">Missile Procurement</option>
-                        <option value="RDTE">RDTE</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="searchFilter">Search</label>
-                    <input type="text" id="searchFilter" placeholder="Search by title or explanation...">
-                </div>
-            </div>
-
-            <!-- Data Table -->
-            <div class="data-table">
-                <div id="tableContainer">
-                    <div class="loading">
-                        <div class="spinner"></div>
-                        <p>Loading data...</p>
+            <!-- Statistics Overview -->
+            <div class="section">
+                <h2>📈 Data Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalFiles">-</div>
+                        <div class="stat-label">Total Files</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="dd1414Files">-</div>
+                        <div class="stat-label">DD1414 Files</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="enhancedFiles">-</div>
+                        <div class="stat-label">Enhanced Data</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalSize">-</div>
+                        <div class="stat-label">Total Size</div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <footer>
-            <p>Last Updated: <span id="lastUpdated">-</span></p>
-            <p>Data source: <a href="https://comptroller.defense.gov" target="_blank">comptroller.defense.gov</a></p>
-        </footer>
+            <!-- Search and Filter -->
+            <div class="section">
+                <h2>🔍 Search & Filter</h2>
+                <div class="search-container">
+                    <input type="text" class="search-box" id="searchBox" placeholder="Search files by name, type, or content...">
+                </div>
+                <div class="filter-tabs">
+                    <div class="filter-tab active" data-filter="all">All Files</div>
+                    <div class="filter-tab" data-filter="dd1414">DD1414 Forms</div>
+                    <div class="filter-tab" data-filter="enhanced">Enhanced Data</div>
+                    <div class="filter-tab" data-filter="csv">CSV Files</div>
+                    <div class="filter-tab" data-filter="json">JSON Files</div>
+                </div>
+            </div>
+
+            <!-- Data Categories -->
+            <div class="section">
+                <h2>📁 Data Categories</h2>
+                <div class="data-categories" id="dataCategories">
+                    <div class="loading">Loading data files...</div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="last-updated.js"></script>
-    <script src="client-rag.js"></script>
-    <script src="rocket-chat-widget.js"></script>
     <script>
-        let allData = [];
-        let filteredData = [];
+        let allFiles = [];
+        let filteredFiles = [];
+        let currentFilter = 'all';
 
-        async function loadAllCSVFiles() {
+        // File categories and their configurations
+        const fileCategories = {
+            dd1414: {
+                title: 'DD1414 Reprogramming Forms',
+                icon: '📋',
+                description: 'Structured data from DD1414 reprogramming action forms',
+                files: []
+            },
+            enhanced: {
+                title: 'Enhanced Analysis Data',
+                icon: '🔍',
+                description: 'Comprehensive analysis with OCR processing and confidence scoring',
+                files: []
+            },
+            extracted: {
+                title: 'Extracted CSV Data',
+                icon: '📊',
+                description: 'Individual CSV files extracted from PDF documents',
+                files: []
+            },
+            metadata: {
+                title: 'Metadata & Configuration',
+                icon: '⚙️',
+                description: 'System metadata, configuration files, and processing logs',
+                files: []
+            }
+        };
+
+        async function loadAllFiles() {
             try {
-                // First try to load budget_data.csv (consolidated budget data)
-                try {
-                    const budgetResponse = await fetch('data/budget_data.csv');
-                    if (budgetResponse.ok) {
-                        const csvText = await budgetResponse.text();
-                        allData = parseCSV(csvText);
-                        console.log(`Loaded ${allData.length} budget lines from budget_data.csv`);
-                        filteredData = allData;
-                        displayData(filteredData);
-                        return;
+                console.log('Loading all data files...');
+                
+                // Load DD1414 enhanced data
+                const dd1414Files = [
+                    {
+                        name: 'DD1414 Enhanced Data (Complete)',
+                        path: 'data/dd1414_csv/dd1414_enhanced_data.csv',
+                        type: 'enhanced',
+                        size: '62KB',
+                        description: 'Complete DD1414 analysis with 34 documents, $484.6B total value',
+                        records: 34
+                    },
+                    {
+                        name: 'DD1414 Enhanced Data (JSON)',
+                        path: 'data/dd1414_csv/dd1414_enhanced_data.json',
+                        type: 'enhanced',
+                        size: '85KB',
+                        description: 'JSON format of enhanced DD1414 data',
+                        records: 34
+                    },
+                    {
+                        name: 'DD1414 Fast Data',
+                        path: 'data/dd1414_csv/dd1414_fast_data.csv',
+                        type: 'enhanced',
+                        size: '11KB',
+                        description: 'Fast extraction results for DD1414 documents',
+                        records: 16
+                    },
+                    {
+                        name: 'DD1414 Summary Statistics',
+                        path: 'data/dd1414_csv/dd1414_summary.json',
+                        type: 'metadata',
+                        size: '1KB',
+                        description: 'Summary statistics and analysis metrics',
+                        records: 1
                     }
-                } catch (e) {
-                    console.log('budget_data.csv not found, trying individual files...');
-                }
+                ];
+
+                // Load individual extracted CSV files
+                const extractedFiles = await loadExtractedCSVFiles();
                 
-                // Fallback: Load metadata to find CSV files
-                const metadataResponse = await fetch('data/metadata.json');
-                const metadata = await metadataResponse.json();
-                
-                const processedFiles = metadata.processed_files || {};
-                allData = [];
-                
-                // Load each CSV file
-                for (const [filename, info] of Object.entries(processedFiles)) {
-                    if (info.csv_generated && info.csv_path) {
-                        const csvFilename = info.csv_path.split('/').pop();
-                        try {
-                            const csvResponse = await fetch(`data/${csvFilename}`);
-                            const csvText = await csvResponse.text();
-                            const rows = parseCSV(csvText);
-                            allData = allData.concat(rows);
-                        } catch (e) {
-                            console.error(`Error loading ${csvFilename}:`, e);
-                        }
+                // Load metadata files
+                const metadataFiles = [
+                    {
+                        name: 'System Metadata',
+                        path: 'data/metadata.json',
+                        type: 'metadata',
+                        size: '7KB',
+                        description: 'System metadata and processing information',
+                        records: 1
                     }
-                }
+                ];
+
+                // Combine all files
+                allFiles = [
+                    ...dd1414Files,
+                    ...extractedFiles,
+                    ...metadataFiles
+                ];
+
+                // Categorize files
+                categorizeFiles();
                 
-                filteredData = allData;
-                displayData(filteredData);
+                // Update statistics
+                updateStatistics();
+                
+                // Display files
+                displayFiles();
+                
+                console.log(`Loaded ${allFiles.length} files total`);
                 
             } catch (error) {
-                console.error('Error loading data:', error);
-                document.getElementById('tableContainer').innerHTML = 
-                    '<p style="text-align: center; color: #dc3545;">Error loading data. Please try again later.</p>';
+                console.error('Error loading files:', error);
+                document.getElementById('dataCategories').innerHTML = 
+                    '<div class="error">Error loading data files. Please try again later.</div>';
             }
         }
 
-        function parseCSV(csvText) {
-            const lines = csvText.trim().split('\n');
-            if (lines.length === 0) return [];
-            
-            // Parse header
-            const headers = lines[0].split(',').map(h => h.replace(/"/g, '').trim());
-            
-            // Parse data rows
-            const rows = [];
-            for (let i = 1; i < lines.length; i++) {
-                const values = lines[i].split(',').map(v => v.replace(/"/g, '').trim());
-                const row = {};
-                headers.forEach((header, index) => {
-                    row[header] = values[index] || '';
-                });
-                rows.push(row);
-            }
-            
-            return rows;
+        async function loadExtractedCSVFiles() {
+            // This would ideally be done server-side, but for now we'll use known files
+            const knownFiles = [
+                'FY_2018_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2012_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2025_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2016_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2021_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2023_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2014_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2013_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2024_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2022_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2020_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'FY_2019_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
+                'Reprogramming_Overview_extracted.csv',
+                '05-004_IR_C_FCFCD_extracted.csv',
+                '05-17_PA_F_22_Aircraft_extracted.csv',
+                '05-004_IR_IED_extracted.csv',
+                '05-37_PA_Medical_Technology_extracted.csv',
+                '03_06_extracted.csv',
+                'PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018_extracted.csv',
+                '05-29_PA_B_2_WTA_extracted.csv'
+            ];
+
+            return knownFiles.map(filename => ({
+                name: filename.replace('_extracted.csv', ''),
+                path: `data/csv/${filename}`,
+                type: filename.includes('DD_1414') ? 'dd1414' : 'extracted',
+                size: '~5KB',
+                description: filename.includes('DD_1414') ? 
+                    'DD1414 reprogramming form data' : 
+                    'Extracted data from PDF document',
+                records: '~50'
+            }));
         }
 
-        function displayData(data) {
-            const container = document.getElementById('tableContainer');
-            
-            if (data.length === 0) {
-                container.innerHTML = '<p style="text-align: center; color: #6c757d;">No data found matching filters</p>';
-                return;
-            }
-            
-            let html = `
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Branch</th>
-                            <th>Category</th>
-                            <th>Budget Activity</th>
-                            <th>Fiscal Year</th>
-                            <th>Amount ($000s)</th>
-                            <th>Direction</th>
-                            <th>Explanation</th>
-                            <th>Source</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
-            
-            data.forEach(row => {
-                const fy = row.fiscal_year_start && row.fiscal_year_end ? 
-                    `${row.fiscal_year_start}-${row.fiscal_year_end}` : 
-                    (row.fiscal_year || '-');
-                
-                const amount = row.reprogramming_amount || row.budget_amount || '-';
-                const direction = row.direction || '-';
-                const budget_activity = row.budget_activity_title || row.program_element || '-';
-                const explanation = (row.explanation || '').substring(0, 150);
-                const filename = row.file || '';
-                
-                // Format amount with commas
-                const formattedAmount = typeof amount === 'number' ? 
-                    amount.toLocaleString() : amount;
-                
-                html += `
-                    <tr>
-                        <td>${row.branch || '-'}</td>
-                        <td>${row.appropriation_category || '-'}</td>
-                        <td>${budget_activity}</td>
-                        <td>${fy}</td>
-                        <td>${formattedAmount}</td>
-                        <td>${direction}</td>
-                        <td>${explanation}${explanation.length >= 150 ? '...' : ''}</td>
-                        <td><a href="data/${filename.replace('.pdf', '_extracted.csv')}" class="download-btn" download>CSV</a></td>
-                    </tr>
-                `;
+        function categorizeFiles() {
+            // Reset categories
+            Object.keys(fileCategories).forEach(key => {
+                fileCategories[key].files = [];
             });
-            
-            html += `
-                    </tbody>
-                </table>
-            `;
-            
-            container.innerHTML = html;
-        }
 
-        function applyFilters() {
-            const branchFilter = document.getElementById('branchFilter').value;
-            const categoryFilter = document.getElementById('categoryFilter').value;
-            const searchFilter = document.getElementById('searchFilter').value.toLowerCase();
-            
-            filteredData = allData.filter(row => {
-                if (branchFilter && row.branch !== branchFilter) return false;
-                if (categoryFilter && row.appropriation_category !== categoryFilter) return false;
-                if (searchFilter) {
-                    const searchText = `${row.budget_title} ${row.explanation}`.toLowerCase();
-                    if (!searchText.includes(searchFilter)) return false;
+            // Categorize files
+            allFiles.forEach(file => {
+                if (fileCategories[file.type]) {
+                    fileCategories[file.type].files.push(file);
+                } else {
+                    fileCategories.extracted.files.push(file);
                 }
-                return true;
+            });
+        }
+
+        function updateStatistics() {
+            const totalFiles = allFiles.length;
+            const dd1414Files = allFiles.filter(f => f.type === 'dd1414').length;
+            const enhancedFiles = allFiles.filter(f => f.type === 'enhanced').length;
+            
+            // Calculate total size (rough estimate)
+            const totalSize = allFiles.reduce((sum, file) => {
+                const size = file.size.replace(/[^\d]/g, '');
+                return sum + (parseInt(size) || 0);
+            }, 0);
+
+            document.getElementById('totalFiles').textContent = totalFiles;
+            document.getElementById('dd1414Files').textContent = dd1414Files;
+            document.getElementById('enhancedFiles').textContent = enhancedFiles;
+            document.getElementById('totalSize').textContent = `${Math.round(totalSize / 1024)}KB`;
+        }
+
+        function displayFiles() {
+            const container = document.getElementById('dataCategories');
+            container.innerHTML = '';
+
+            Object.entries(fileCategories).forEach(([key, category]) => {
+                if (category.files.length === 0) return;
+
+                const categoryHtml = `
+                    <div class="category-card">
+                        <div class="category-header">
+                            <div class="category-icon">${category.icon}</div>
+                            <div class="category-title">${category.title}</div>
+                        </div>
+                        <div class="category-description">${category.description}</div>
+                        <div class="file-list">
+                            ${category.files.map(file => createFileItem(file)).join('')}
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += categoryHtml;
+            });
+        }
+
+        function createFileItem(file) {
+            const typeBadge = file.type === 'dd1414' ? 'dd1414-badge' : 
+                             file.type === 'enhanced' ? 'enhanced-badge' : '';
+            
+            return `
+                <div class="file-item">
+                    <div class="file-info">
+                        <div class="file-name">
+                            ${file.name}
+                            <span class="file-type-badge ${typeBadge}">${file.type.toUpperCase()}</span>
+                        </div>
+                        <div class="file-meta">
+                            ${file.description} • ${file.size} • ${file.records} records
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <a href="${file.path}" class="btn btn-primary" download>
+                            📥 Download
+                        </a>
+                        <a href="${file.path}" class="btn btn-secondary" target="_blank">
+                            👁️ View
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function filterFiles(filter) {
+            currentFilter = filter;
+            
+            // Update filter tabs
+            document.querySelectorAll('.filter-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`[data-filter="${filter}"]`).classList.add('active');
+            
+            // Filter files
+            if (filter === 'all') {
+                filteredFiles = allFiles;
+            } else {
+                filteredFiles = allFiles.filter(file => {
+                    if (filter === 'dd1414') return file.type === 'dd1414';
+                    if (filter === 'enhanced') return file.type === 'enhanced';
+                    if (filter === 'csv') return file.path.endsWith('.csv');
+                    if (filter === 'json') return file.path.endsWith('.json');
+                    return true;
+                });
+            }
+            
+            // Re-categorize filtered files
+            categorizeFiles();
+            displayFiles();
+        }
+
+        function searchFiles(query) {
+            const searchTerm = query.toLowerCase();
+            
+            Object.entries(fileCategories).forEach(([key, category]) => {
+                category.files = category.files.filter(file => 
+                    file.name.toLowerCase().includes(searchTerm) ||
+                    file.description.toLowerCase().includes(searchTerm) ||
+                    file.type.toLowerCase().includes(searchTerm)
+                );
             });
             
-            displayData(filteredData);
+            displayFiles();
         }
 
-        // Set up event listeners
-        document.getElementById('branchFilter').addEventListener('change', applyFilters);
-        document.getElementById('categoryFilter').addEventListener('change', applyFilters);
-        document.getElementById('searchFilter').addEventListener('input', applyFilters);
+        // Event listeners
+        document.getElementById('searchBox').addEventListener('input', (e) => {
+            searchFiles(e.target.value);
+        });
 
-        // Update last updated timestamp
-        if (typeof lastUpdated !== 'undefined') {
-            document.getElementById('lastUpdated').textContent = lastUpdated;
-        } else {
-            document.getElementById('lastUpdated').textContent = new Date().toLocaleString();
-        }
+        document.querySelectorAll('.filter-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                filterFiles(e.target.dataset.filter);
+            });
+        });
 
         // Load data on page load
-        loadAllCSVFiles();
+        loadAllFiles();
     </script>
 </body>
 </html>

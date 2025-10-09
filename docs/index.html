@@ -320,6 +320,59 @@
             background: white;
         }
 
+        /* Improve task name visibility on the left */
+        .gantt .bar-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .gantt .bar-section .bar-label {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            fill: #2c3e50;
+            text-shadow: none;
+            dominant-baseline: middle;
+            text-anchor: start;
+        }
+
+        /* Task name area styling */
+        .gantt .bar-section .bar-label-container {
+            background: #f8f9fa;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+
+        /* Popup styling */
+        .gantt-popup {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: 1px solid #e9ecef;
+        }
+
+        .gantt-popup h3 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+            font-size: 16px;
+        }
+
+        .gantt-popup p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #495057;
+        }
+
+        /* Make task names more prominent */
+        .gantt .bar-section .bar-label {
+            font-size: 13px;
+            font-weight: 700;
+            fill: #2c3e50;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+
         /* DD1414 Dashboard Styles */
         .dashboard-grid {
             display: grid;
@@ -724,14 +777,30 @@
                     step: 24,
                     view_modes: ['Quarter Day', 'Half Day', 'Day', 'Week', 'Month'],
                     view_mode: 'Month', // Start zoomed out
-                    bar_height: 20,
+                    bar_height: 25, // Increased for better visibility
                     bar_corner_radius: 3,
                     arrow_curve: 5,
                     padding: 18,
                     popup_trigger: 'click',
                     date_format: 'YYYY-MM-DD',
+                    // Show task names on the left
+                    show_task_names: true,
+                    // Custom task name display
+                    custom_popup_html: function(task) {
+                        return `
+                            <div class="gantt-popup">
+                                <h3>${task.name}</h3>
+                                <p><strong>Progress:</strong> ${task.progress}%</p>
+                                <p><strong>Start:</strong> ${task.start}</p>
+                                <p><strong>End:</strong> ${task.end}</p>
+                                <p><strong>Dependencies:</strong> ${task.dependencies || 'None'}</p>
+                            </div>
+                        `;
+                    },
                     on_click: function (task) {
                         console.log('Task clicked:', task);
+                        // Show task details in a more prominent way
+                        showTaskDetails(task);
                     },
                     on_date_change: function (task, start, end) {
                         console.log('Task date changed:', task, start, end);
@@ -749,6 +818,65 @@
             }
         }
 
+        function showTaskDetails(task) {
+            // Create a modal or detailed view for the task
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            `;
+            
+            modal.innerHTML = `
+                <div style="
+                    background: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    max-width: 500px;
+                    width: 90%;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                ">
+                    <h2 style="margin-bottom: 20px; color: #2c3e50;">${task.name}</h2>
+                    <div style="margin-bottom: 15px;">
+                        <strong>Progress:</strong> 
+                        <div style="background: #e9ecef; height: 20px; border-radius: 10px; margin-top: 5px;">
+                            <div style="background: #667eea; height: 100%; width: ${task.progress}%; border-radius: 10px; transition: width 0.3s;"></div>
+                        </div>
+                        <span style="font-size: 14px; color: #666;">${task.progress}%</span>
+                    </div>
+                    <p><strong>Start Date:</strong> ${task.start}</p>
+                    <p><strong>End Date:</strong> ${task.end}</p>
+                    <p><strong>Dependencies:</strong> ${task.dependencies || 'None'}</p>
+                    <button onclick="this.closest('.modal').remove()" style="
+                        background: #667eea;
+                        color: white;
+                        border: none;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        margin-top: 20px;
+                    ">Close</button>
+                </div>
+            `;
+            
+            modal.className = 'modal';
+            document.body.appendChild(modal);
+            
+            // Close on background click
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.remove();
+                }
+            });
+        }
+
         function showFallbackChart(tasks) {
             let html = '<div style="text-align: center; padding: 20px;">';
             html += '<h3>Project Tasks</h3>';
@@ -757,10 +885,22 @@
             tasks.forEach(task => {
                 const progressBar = '█'.repeat(Math.floor(task.progress / 5)) + '░'.repeat(20 - Math.floor(task.progress / 5));
                 html += `
-                    <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
-                        <div style="font-weight: bold; margin-bottom: 5px;">${task.name}</div>
-                        <div style="font-size: 12px; color: #666; margin-bottom: 5px;">${task.progress}% complete</div>
-                        <div style="font-family: monospace; font-size: 10px;">${progressBar}</div>
+                    <div style="
+                        border: 1px solid #ddd; 
+                        padding: 15px; 
+                        border-radius: 8px; 
+                        cursor: pointer;
+                        transition: all 0.2s;
+                        background: white;
+                        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                    " 
+                    onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.2)'"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 5px rgba(0,0,0,0.1)'"
+                    onclick="showTaskDetails(${JSON.stringify(task).replace(/"/g, '&quot;')})">
+                        <div style="font-weight: bold; margin-bottom: 8px; color: #2c3e50; font-size: 14px;">${task.name}</div>
+                        <div style="font-size: 12px; color: #666; margin-bottom: 8px;">${task.progress}% complete</div>
+                        <div style="font-family: monospace; font-size: 10px; color: #667eea;">${progressBar}</div>
+                        <div style="font-size: 11px; color: #999; margin-top: 5px;">Click for details</div>
                     </div>
                 `;
             });
