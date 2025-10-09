@@ -275,15 +275,49 @@
         /* Frappe Gantt customization */
         .gantt .bar {
             fill: #667eea;
+            stroke: #333;
+            stroke-width: 1px;
         }
 
         .gantt .bar-progress {
             fill: #28a745;
         }
 
+        .gantt .bar-invalid {
+            fill: #dc3545;
+        }
+
         .gantt .bar-label {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 600;
             fill: white;
-            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+
+        /* Ensure text is readable on all bar types */
+        .gantt .bar-label.bar-label.bar-label {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            fill: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+
+        /* Improve overall Gantt chart readability */
+        .gantt-container {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .gantt-container svg {
+            background: white;
         }
 
         /* DD1414 Dashboard Styles */
@@ -689,6 +723,7 @@
                     column_width: 30,
                     step: 24,
                     view_modes: ['Quarter Day', 'Half Day', 'Day', 'Week', 'Month'],
+                    view_mode: 'Month', // Start zoomed out
                     bar_height: 20,
                     bar_corner_radius: 3,
                     arrow_curve: 5,
