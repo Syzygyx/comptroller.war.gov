@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success { background-color: #d4edda; }
+        .error { background-color: #f8d7da; }
+        .warning { background-color: #fff3cd; }
+        .gantt-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow-x: auto;
+        }
+        #gantt-chart {
+            min-width: 800px;
+        }
+        .progress-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .progress-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .progress-label {
+            font-weight: 600;
+            color: #495057;
+        }
+        .progress-value {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Progress Tracker Test</h1>
+    
+    <div class="test-section">
+        <h3>1. Progress Analysis</h3>
+        <div class="progress-summary" id="progress-summary">
+            <div class="progress-item">
+                <span class="progress-label">Overall Progress:</span>
+                <span class="progress-value" id="overallProgress">-</span>
+            </div>
+            <div class="progress-item">
+                <span class="progress-label">DD1414 Documents:</span>
+                <span class="progress-value" id="dd1414Progress">-</span>
+            </div>
+            <div class="progress-item">
+                <span class="progress-label">OCR Processing:</span>
+                <span class="progress-value" id="ocrProgress">-</span>
+            </div>
+            <div class="progress-item">
+                <span class="progress-label">CSV Generation:</span>
+                <span class="progress-value" id="csvProgress">-</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h3>2. Gantt Chart</h3>
+        <div class="gantt-container">
+            <div id="gantt-chart"></div>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h3>3. File Analysis</h3>
+        <div id="file-analysis"></div>
+    </div>
+
+    <script src="progress-tracker.js"></script>
+    <script>
+        let progressTracker = null;
+        let ganttChart = null;
+
+        async function testProgressTracker() {
+            try {
+                console.log('Initializing progress tracker...');
+                progressTracker = new ProgressTracker();
+                await progressTracker.init();
+                
+                // Update progress summary
+                const overallProgress = progressTracker.getOverallProgress();
+                document.getElementById('overallProgress').textContent = overallProgress + '%';
+                
+                const tasks = progressTracker.getTasks();
+                const dd1414Task = tasks.find(t => t.id === 'download_dd1414');
+                const ocrTask = tasks.find(t => t.id === 'ocr_processing');
+                const csvTask = tasks.find(t => t.id === 'csv_generation');
+                
+                document.getElementById('dd1414Progress').textContent = (dd1414Task?.progress || 0) + '%';
+                document.getElementById('ocrProgress').textContent = (ocrTask?.progress || 0) + '%';
+                document.getElementById('csvProgress').textContent = (csvTask?.progress || 0) + '%';
+                
+                // Create Gantt chart
+                createGanttChart(tasks);
+                
+                // Show file analysis
+                showFileAnalysis();
+                
+                console.log('✅ Progress tracker test completed');
+                
+            } catch (error) {
+                console.error('❌ Progress tracker test failed:', error);
+                document.getElementById('file-analysis').innerHTML = 
+                    `<div class="error">Error: ${error.message}</div>`;
+            }
+        }
+
+        function createGanttChart(tasks) {
+            try {
+                // Convert tasks to Frappe Gantt format
+                const ganttData = tasks.map(task => ({
+                    id: task.id,
+                    name: task.name,
+                    start: task.start,
+                    end: task.end,
+                    progress: task.progress,
+                    dependencies: task.dependencies.join(','),
+                    custom_class: 'gantt-task'
+                }));
+
+                ganttChart = new Gantt('#gantt-chart', ganttData, {
+                    header_height: 50,
+                    column_width: 30,
+                    step: 24,
+                    view_modes: ['Quarter Day', 'Half Day', 'Day', 'Week', 'Month'],
+                    bar_height: 20,
+                    bar_corner_radius: 3,
+                    arrow_curve: 5,
+                    padding: 18,
+                    popup_trigger: 'click',
+                    date_format: 'YYYY-MM-DD'
+                });
+                
+                console.log('✅ Gantt chart created');
+            } catch (error) {
+                console.error('❌ Gantt chart creation failed:', error);
+                document.getElementById('gantt-chart').innerHTML = 
+                    '<p style="text-align: center; color: #dc3545;">Error loading Gantt chart</p>';
+            }
+        }
+
+        function showFileAnalysis() {
+            const analysis = progressTracker.getFileAnalysis();
+            let html = '<div class="success">✅ File Analysis Complete</div><ul>';
+            
+            html += `<li><strong>PDFs:</strong> ${analysis.pdfs?.total || 0} total, ${analysis.pdfs?.processed || 0} processed, ${analysis.pdfs?.dd1414 || 0} DD1414</li>`;
+            html += `<li><strong>CSVs:</strong> ${analysis.csvs?.total || 0} total, ${analysis.csvs?.dd1414 || 0} DD1414</li>`;
+            html += `<li><strong>Embeddings:</strong> ${analysis.embeddings?.available ? 'Available' : 'Not Available'} (${analysis.embeddings?.chunks || 0} chunks)</li>`;
+            html += `<li><strong>Validation:</strong> ${analysis.validation?.available ? 'Available' : 'Not Available'} (${analysis.validation?.passed || 0} passed)</li>`;
+            html += '</ul>';
+            
+            document.getElementById('file-analysis').innerHTML = html;
+        }
+
+        // Run test on load
+        window.addEventListener('load', testProgressTracker);
+    </script>
+</body>
+</html>

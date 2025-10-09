@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Progress Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success { background-color: #d4edda; }
+        .error { background-color: #f8d7da; }
+        .warning { background-color: #fff3cd; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Simple Progress Test</h1>
+    
+    <div class="test-section">
+        <h3>1. Basic Progress Tracker Test</h3>
+        <button onclick="testBasicProgress()">Test Basic Progress</button>
+        <div id="basic-results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>2. File Analysis Test</h3>
+        <button onclick="testFileAnalysis()">Test File Analysis</button>
+        <div id="file-results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>3. Task Generation Test</h3>
+        <button onclick="testTaskGeneration()">Test Task Generation</button>
+        <div id="task-results"></div>
+    </div>
+
+    <script src="progress-tracker.js"></script>
+    <script>
+        let progressTracker = null;
+
+        async function testBasicProgress() {
+            const resultsDiv = document.getElementById('basic-results');
+            resultsDiv.innerHTML = 'Testing...';
+            
+            try {
+                progressTracker = new ProgressTracker();
+                await progressTracker.init();
+                
+                const overallProgress = progressTracker.getOverallProgress();
+                resultsDiv.innerHTML = `
+                    <div class="success">
+                        ✅ Progress Tracker Initialized Successfully<br>
+                        Overall Progress: ${overallProgress}%
+                    </div>
+                `;
+            } catch (error) {
+                resultsDiv.innerHTML = `
+                    <div class="error">
+                        ❌ Error: ${error.message}<br>
+                        Stack: ${error.stack}
+                    </div>
+                `;
+            }
+        }
+
+        async function testFileAnalysis() {
+            const resultsDiv = document.getElementById('file-results');
+            resultsDiv.innerHTML = 'Testing...';
+            
+            try {
+                if (!progressTracker) {
+                    progressTracker = new ProgressTracker();
+                    await progressTracker.init();
+                }
+                
+                const analysis = progressTracker.getFileAnalysis();
+                resultsDiv.innerHTML = `
+                    <div class="success">
+                        ✅ File Analysis Complete<br>
+                        PDFs: ${analysis.pdfs?.total || 0} total, ${analysis.pdfs?.dd1414 || 0} DD1414<br>
+                        CSVs: ${analysis.csvs?.total || 0} total, ${analysis.csvs?.dd1414 || 0} DD1414<br>
+                        Embeddings: ${analysis.embeddings?.available ? 'Available' : 'Not Available'}<br>
+                        Validation: ${analysis.validation?.available ? 'Available' : 'Not Available'}
+                    </div>
+                `;
+            } catch (error) {
+                resultsDiv.innerHTML = `
+                    <div class="error">
+                        ❌ Error: ${error.message}<br>
+                        Stack: ${error.stack}
+                    </div>
+                `;
+            }
+        }
+
+        async function testTaskGeneration() {
+            const resultsDiv = document.getElementById('task-results');
+            resultsDiv.innerHTML = 'Testing...';
+            
+            try {
+                if (!progressTracker) {
+                    progressTracker = new ProgressTracker();
+                    await progressTracker.init();
+                }
+                
+                const tasks = progressTracker.getTasks();
+                let html = '<div class="success">✅ Tasks Generated Successfully</div><ul>';
+                
+                tasks.forEach(task => {
+                    html += `<li><strong>${task.name}:</strong> ${task.progress}% complete</li>`;
+                });
+                
+                html += '</ul>';
+                resultsDiv.innerHTML = html;
+            } catch (error) {
+                resultsDiv.innerHTML = `
+                    <div class="error">
+                        ❌ Error: ${error.message}<br>
+                        Stack: ${error.stack}
+                    </div>
+                `;
+            }
+        }
+
+        // Auto-run basic test on load
+        window.addEventListener('load', () => {
+            console.log('Page loaded, running basic test...');
+            testBasicProgress();
+        });
+    </script>
+</body>
+</html>

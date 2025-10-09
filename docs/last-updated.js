@@ -1,2 +1,2 @@
-// This file is automatically updated by GitHub Actions
-const lastUpdated = 'Not yet deployed';
+// Last updated timestamp
+const lastUpdated = new Date().toLocaleString();

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Client RAG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success { background-color: #d4edda; }
+        .error { background-color: #f8d7da; }
+        .warning { background-color: #fff3cd; }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+        }
+        button:hover { background: #0056b3; }
+        #results {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Client RAG Test</h1>
+    
+    <div class="test-section">
+        <h3>1. RAG Initialization</h3>
+        <button onclick="testRAGInit()">Test RAG Init</button>
+        <div id="rag-status"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>2. Search Test</h3>
+        <input type="text" id="search-query" placeholder="Enter search query" value="military appropriations">
+        <button onclick="testSearch()">Test Search</button>
+        <div id="search-results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>3. Widget Test</h3>
+        <button onclick="testWidget()">Test Widget</button>
+        <div id="widget-status"></div>
+    </div>
+    
+    <div id="results"></div>
+
+    <script src="client-rag.js"></script>
+    <script src="rocket-chat-widget.js"></script>
+    <script>
+        let rag = null;
+        let widget = null;
+
+        async function testRAGInit() {
+            const statusDiv = document.getElementById('rag-status');
+            statusDiv.innerHTML = 'Initializing...';
+            
+            try {
+                rag = new ClientRAG();
+                await rag.initialize();
+                
+                const stats = rag.getStats();
+                statusDiv.innerHTML = `
+                    <div class="success">
+                        ✅ RAG Initialized Successfully<br>
+                        Chunks: ${stats.totalChunks}<br>
+                        Has Embeddings: ${stats.hasEmbeddings}<br>
+                        Model Loaded: ${stats.modelLoaded}
+                    </div>
+                `;
+            } catch (error) {
+                statusDiv.innerHTML = `
+                    <div class="error">
+                        ❌ RAG Initialization Failed<br>
+                        Error: ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        async function testSearch() {
+            const query = document.getElementById('search-query').value;
+            const resultsDiv = document.getElementById('search-results');
+            
+            if (!rag || !rag.initialized) {
+                resultsDiv.innerHTML = '<div class="error">❌ RAG not initialized</div>';
+                return;
+            }
+            
+            resultsDiv.innerHTML = 'Searching...';
+            
+            try {
+                const results = rag.search(query, 3);
+                
+                if (results.length === 0) {
+                    resultsDiv.innerHTML = '<div class="warning">⚠️ No results found</div>';
+                    return;
+                }
+                
+                let html = '<div class="success">✅ Search Results:</div><ul>';
+                results.forEach((result, i) => {
+                    html += `
+                        <li>
+                            <strong>${i + 1}. Score: ${result.score.toFixed(3)}</strong><br>
+                            File: ${result.chunk.metadata.filename}<br>
+                            Text: ${result.chunk.text.substring(0, 100)}...
+                        </li>
+                    `;
+                });
+                html += '</ul>';
+                
+                resultsDiv.innerHTML = html;
+            } catch (error) {
+                resultsDiv.innerHTML = `
+                    <div class="error">
+                        ❌ Search Failed<br>
+                        Error: ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        function testWidget() {
+            const statusDiv = document.getElementById('widget-status');
+            
+            try {
+                if (window.rocketChatWidget) {
+                    statusDiv.innerHTML = '<div class="success">✅ Widget is available</div>';
+                } else {
+                    statusDiv.innerHTML = '<div class="error">❌ Widget not found</div>';
+                }
+            } catch (error) {
+                statusDiv.innerHTML = `
+                    <div class="error">
+                        ❌ Widget Test Failed<br>
+                        Error: ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        // Auto-run tests on load
+        window.addEventListener('load', () => {
+            console.log('Page loaded, running tests...');
+            testRAGInit();
+        });
+    </script>
+</body>
+</html>

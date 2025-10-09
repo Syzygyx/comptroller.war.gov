@@ -1,0 +1,626 @@
+{
+  "url": "https://syzygyx.github.io/DD1414/",
+  "title": "Comptroller War Gov - Data Extraction Dashboard",
+  "console_messages": [
+    {
+      "type": "log",
+      "text": "Initializing progress tracker...",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/",
+        "lineNumber": 498,
+        "columnNumber": 24
+      }
+    },
+    {
+      "type": "log",
+      "text": "Initializing client-side RAG...",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/client-rag.js",
+        "lineNumber": 18,
+        "columnNumber": 20
+      }
+    },
+    {
+      "type": "log",
+      "text": "Progress tracker initialized, updating UI...",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/",
+        "lineNumber": 502,
+        "columnNumber": 24
+      }
+    },
+    {
+      "type": "log",
+      "text": "Progress summary updated, creating Gantt chart...",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/",
+        "lineNumber": 517,
+        "columnNumber": 24
+      }
+    },
+    {
+      "type": "error",
+      "text": "Error: <rect> attribute width: A negative value is not valid. (\"-6675.84\")",
+      "location": {
+        "url": "https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.min.js",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "log",
+      "text": "View mode changed: Day",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/",
+        "lineNumber": 575,
+        "columnNumber": 32
+      }
+    },
+    {
+      "type": "log",
+      "text": "Progress tracker initialization complete",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/",
+        "lineNumber": 522,
+        "columnNumber": 24
+      }
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "warning",
+      "text": "Chunks file not found, trying alternative paths...",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/client-rag.js",
+        "lineNumber": 23,
+        "columnNumber": 24
+      }
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://syzygyx.github.io/favicon.ico",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/data/validation_summary.json",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "log",
+      "text": "No validation data available",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/",
+        "lineNumber": 406,
+        "columnNumber": 28
+      }
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://syzygyx.github.io/data/embeddings/chunks.json",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Failed to initialize RAG: Error: Chunks file not found in any expected location\n    at ClientRAG.initialize (https://syzygyx.github.io/DD1414/client-rag.js:47:27)\n    at async RocketChatWidget.initializeRAG (https://syzygyx.github.io/DD1414/rocket-chat-widget.js:730:13)\n    at async RocketChatWidget.init (https://syzygyx.github.io/DD1414/rocket-chat-widget.js:150:9)",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/client-rag.js",
+        "lineNumber": 94,
+        "columnNumber": 20
+      }
+    },
+    {
+      "type": "warning",
+      "text": "\u26a0\ufe0f RAG system not available: Chunks file not found in any expected location",
+      "location": {
+        "url": "https://syzygyx.github.io/DD1414/rocket-chat-widget.js",
+        "lineNumber": 732,
+        "columnNumber": 20
+      }
+    }
+  ],
+  "page_errors": [],
+  "network_requests": [
+    {
+      "url": "https://syzygyx.github.io/DD1414/",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "age": "0",
+        "cache-control": "max-age=600",
+        "content-encoding": "gzip",
+        "content-length": "4811",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 09 Oct 2025 03:33:39 GMT",
+        "etag": "W/\"68e72d07-5690\"",
+        "expires": "Thu, 09 Oct 2025 03:43:39 GMT",
+        "last-modified": "Thu, 09 Oct 2025 03:33:27 GMT",
+        "server": "GitHub.com",
+        "vary": "Accept-Encoding",
+        "via": "1.1 varnish",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-fastly-request-id": "cc92c61c6139c484a4e6c44de7cdcab21f3b8610",
+        "x-github-request-id": "68B5:29205E:B412F8:BE5678:68E72D13",
+        "x-proxy-cache": "MISS",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-timer": "S1759980820.938127,VS0,VE33"
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.min.js",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.css",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/last-updated.js",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/client-rag.js",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/rocket-chat-widget.js",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/progress-tracker.js",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/last-updated.js",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "x-fastly-request-id": "559ddcbb6d7a723d900a1d432c6a5b3366a2bb4c",
+        "etag": "\"68e72d07-60\"",
+        "age": "0",
+        "x-github-request-id": "5D12:171793:A6A519:B0E7D3:68E72D13",
+        "expires": "Thu, 09 Oct 2025 03:43:40 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Thu, 09 Oct 2025 03:33:27 GMT",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1759980820.020444,VS0,VE14",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "96",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/progress-tracker.js",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "x-fastly-request-id": "353ed3937b39c026d02746a7424a412ce456b8f7",
+        "content-encoding": "gzip",
+        "etag": "W/\"68e72d07-2d9d\"",
+        "age": "0",
+        "x-github-request-id": "2204:E3F9C:B6EAD4:C12A1B:68E72D14",
+        "expires": "Thu, 09 Oct 2025 03:43:40 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Thu, 09 Oct 2025 03:33:27 GMT",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1759980820.030233,VS0,VE13",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "2655",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/client-rag.js",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "x-fastly-request-id": "fd65e3f1247c35c6fb3eb8a3fb1416c11328d2d6",
+        "content-encoding": "gzip",
+        "etag": "W/\"68e72d07-2221\"",
+        "age": "0",
+        "x-github-request-id": "9AD3:2736E:B6D05D:C10F89:68E72D13",
+        "expires": "Thu, 09 Oct 2025 03:43:40 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Thu, 09 Oct 2025 03:33:27 GMT",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1759980820.025863,VS0,VE18",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "2246",
+        "server": "GitHub.com"
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/rocket-chat-widget.js",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "x-fastly-request-id": "6a671b8f14211e349e97c2e6e1de5f851f40f9bb",
+        "content-encoding": "gzip",
+        "etag": "W/\"68e72d07-6bf5\"",
+        "age": "0",
+        "x-github-request-id": "9B46:B86E8:A9976C:B3DB26:68E72D12",
+        "expires": "Thu, 09 Oct 2025 03:43:40 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Thu, 09 Oct 2025 03:33:27 GMT",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1759980820.025939,VS0,VE20",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "6594",
+        "server": "GitHub.com"
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.css",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-expose-headers": "*",
+        "content-encoding": "br",
+        "cf-cache-status": "HIT",
+        "etag": "W/\"8f1-AzvBxHxvJGX2nYxYVG6E+4sH0CU\"",
+        "age": "1482692",
+        "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=YWDSQwVZELNxCoyiZh%2FxlbZoBL%2FylL4VLp%2F38egciFtjTq2l36mEczzR%2FwwhfvvMxQj9PgERQ4Rol8Yh2ZZZdPbdUpmXghVmABA828uFh5TjGw0dUmbBP44s8ON2RDT4lZuhaWpSwggUVW2VO5o%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+        "x-content-type-options": "nosniff",
+        "x-jsd-version-type": "version",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "x-cache": "HIT, HIT",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "text/css; charset=utf-8",
+        "x-served-by": "cache-fra-eddf8230026-FRA, cache-iad-kiad7000028-IAD",
+        "vary": "Accept-Encoding",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "cache-control": "public, max-age=31536000, s-maxage=31536000, immutable",
+        "timing-allow-origin": "*",
+        "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+        "cross-origin-resource-policy": "cross-origin",
+        "cf-ray": "98bad15deab95e39-EWR",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "708",
+        "server": "cloudflare",
+        "x-jsd-version": "0.6.1"
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.min.js",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "access-control-expose-headers": "*",
+        "content-encoding": "br",
+        "cf-cache-status": "HIT",
+        "etag": "W/\"6ac7-Ikw7ztGRDlHlGNMm8b1V3Tq/MAA\"",
+        "age": "30153",
+        "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=hOAXA5F%2BHN%2FIv6p0ssCY9c5D1lk%2BG8RFYVpYFH9OpuG%2FNSyKcwaJkv9KmRg2ih4WJ41F%2F6oBwn0gTE0rTlYikYc%2BpWIiNJ4ukJ7qzXu1Lx%2B%2FOqminrqRv9Au8onqHj25Cju3YCSEgI3pkc4y1P4%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+        "x-content-type-options": "nosniff",
+        "x-jsd-version-type": "version",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "x-cache": "HIT, HIT",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "x-served-by": "cache-fra-eddf8230141-FRA, cache-iad-kiad7000121-IAD",
+        "vary": "Accept-Encoding",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "cache-control": "public, max-age=31536000, s-maxage=31536000, immutable",
+        "timing-allow-origin": "*",
+        "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+        "cross-origin-resource-policy": "cross-origin",
+        "cf-ray": "98bad15dfad95e39-EWR",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "8513",
+        "server": "cloudflare",
+        "x-jsd-version": "0.6.1"
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "x-fastly-request-id": "13b6e15e698720d3312aacf9183a1020250093d0",
+        "etag": "\"68e72d07-a5\"",
+        "age": "0",
+        "x-github-request-id": "68B5:29205E:B41359:BE56DA:68E72D13",
+        "expires": "Thu, 09 Oct 2025 03:43:40 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "last-modified": "Thu, 09 Oct 2025 03:33:27 GMT",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1759980820.208227,VS0,VE14",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "165",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/metadata.json",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "x-fastly-request-id": "13b6e15e698720d3312aacf9183a1020250093d0",
+        "etag": "\"68e72d07-a5\"",
+        "age": "0",
+        "x-github-request-id": "68B5:29205E:B41359:BE56DA:68E72D13",
+        "expires": "Thu, 09 Oct 2025 03:43:40 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "last-modified": "Thu, 09 Oct 2025 03:33:27 GMT",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1759980820.208227,VS0,VE14",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "165",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/validation_summary.json",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+      "method": "GET",
+      "status": 404,
+      "headers": {
+        "x-fastly-request-id": "d3a8251c31358ecd7b36446bda5ee65922f313f4",
+        "content-encoding": "gzip",
+        "etag": "W/\"64d39a40-24a3\"",
+        "age": "0",
+        "x-github-request-id": "D8C6:140629:A7CCEA:B2105C:68E72D14",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'",
+        "x-timer": "S1759980820.250714,VS0,VE13",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "5254",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/validation_summary.json",
+      "method": "GET",
+      "status": 404,
+      "headers": {
+        "x-fastly-request-id": "38a5fe4f0f68253a01bee46e81908eab422ce376",
+        "content-encoding": "gzip",
+        "etag": "W/\"64d39a40-24a3\"",
+        "age": "0",
+        "x-github-request-id": "1603:3CD12F:9DE037:A81B3D:68E72D13",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'",
+        "x-timer": "S1759980820.261552,VS0,VE15",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "5254",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+      "method": "GET",
+      "status": 404,
+      "headers": {
+        "x-fastly-request-id": "268390e084db52307b55c8403a36cfd2bf3ce41c",
+        "content-encoding": "gzip",
+        "etag": "W/\"64d39a40-24a3\"",
+        "age": "0",
+        "x-github-request-id": "D8C6:140629:A7CCEA:B2105C:68E72D14",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "1",
+        "vary": "Accept-Encoding",
+        "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'",
+        "x-timer": "S1759980820.307599,VS0,VE1",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "5254",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/DD1414/data/embeddings/chunks.json",
+      "method": "GET",
+      "status": 404,
+      "headers": {
+        "x-fastly-request-id": "0f9edb63d5522888960f9801e35a01b77ed057c2",
+        "content-encoding": "gzip",
+        "etag": "W/\"64d39a40-24a3\"",
+        "age": "0",
+        "x-github-request-id": "D8C6:140629:A7CCEA:B2105C:68E72D14",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "2",
+        "vary": "Accept-Encoding",
+        "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'",
+        "x-timer": "S1759980820.346190,VS0,VE1",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "5254",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      }
+    },
+    {
+      "url": "https://syzygyx.github.io/data/embeddings/chunks.json",
+      "method": "GET",
+      "status": "pending"
+    },
+    {
+      "url": "https://syzygyx.github.io/data/embeddings/chunks.json",
+      "method": "GET",
+      "status": 404,
+      "headers": {
+        "x-fastly-request-id": "97340efaebfa22016fd6348ca1da68184cfcbd53",
+        "content-encoding": "gzip",
+        "etag": "W/\"68c9de78-239b\"",
+        "age": "0",
+        "x-github-request-id": "22A6:991C0:AC2008:B65DE4:68E72D13",
+        "x-cache": "MISS",
+        "date": "Thu, 09 Oct 2025 03:33:40 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "x-served-by": "cache-lga21983-LGA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'",
+        "x-timer": "S1759980820.381728,VS0,VE16",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "content-length": "5142",
+        "server": "GitHub.com"
+      }
+    }
+  ],
+  "timestamp": 376525.383900166
+}

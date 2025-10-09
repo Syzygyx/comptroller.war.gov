@@ -460,9 +460,15 @@ class RocketChatWidget {
      */
     attachEventListeners() {
         // Toggle button
-        document.getElementById('rc-toggle').addEventListener('click', () => {
-            this.toggleChat();
-        });
+        const toggleButton = document.getElementById('rc-toggle');
+        if (toggleButton) {
+            toggleButton.addEventListener('click', () => {
+                console.log('Toggle button clicked');
+                this.toggleChat();
+            });
+        } else {
+            console.error('Toggle button not found');
+        }
 
         // Close button
         document.getElementById('rc-close').addEventListener('click', () => {

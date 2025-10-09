@@ -93,73 +93,100 @@ class BudgetParser:
     
     def parse_dd1414_baseline(self, text: str, filename: str) -> List[Dict[str, Any]]:
         """
-        Parse DD 1414 baseline budget document
+        Parse DD 1414 baseline budget document - IMPROVED VERSION
         
-        These have table formats with appropriation accounts and dollar amounts
+        Handles complex table formats with multiple numeric columns
         """
         lines = []
         
-        # Extract fiscal year
-        fy_match = re.search(r'(?:FY|FISCAL YEAR|Fiscal Year)\s*(\d{4})', filename + ' ' + text[:1000])
+        # Extract fiscal year from filename
+        fy_match = re.search(r'FY[_\s]*(\d{4})', filename)
         fiscal_year = fy_match.group(1) if fy_match else 'Unknown'
         
-        # Look for appropriation section headers
-        # Example: "DEPARTMENT OF THE ARMY" or "Operation and Maintenance, Army"
-        
+        # Current context trackers
         current_branch = None
         current_category = None
+        current_budget_activity = None
+        current_ba_number = None
         
-        lines_text = text.split('\n')
+        text_lines = text.split('\n')
         
-        for i, line in enumerate(lines_text):
+        for i, line in enumerate(text_lines):
             line = line.strip()
-            if not line:
+            if not line or len(line) < 10:
                 continue
             
-            # Check for branch headers
-            if 'DEPARTMENT OF THE ARMY' in line.upper():
-                current_branch = 'Army'
-            elif 'DEPARTMENT OF THE NAVY' in line.upper():
-                current_branch = 'Navy'
-            elif 'DEPARTMENT OF THE AIR FORCE' in line.upper():
-                current_branch = 'Air Force'
-            elif 'DEFENSE-WIDE' in line.upper():
-                current_branch = 'Defense-Wide'
+            # Detect appropriation title (top of document)
+            # Format: "Appropriation Account Title: Military Personnel, Army, 2023/2023"
+            approp_match = re.search(
+                r'Appropriation.*?:\s*(Military Personnel|Operation and Maintenance|Procurement|'
+                r'Research.*?Development|Research.*?Evaluation),?\s*(Army|Navy|Air Force|Marine|Defense)',
+                line, re.IGNORECASE
+            )
+            if approp_match:
+                current_category = approp_match.group(1)
+                current_branch = approp_match.group(2)
+                # Normalize
+                if 'Research' in current_category:
+                    current_category = 'Research, Development, Test, and Evaluation'
+                if 'Marine' in current_branch:
+                    current_branch = 'Marines'
+                continue
             
-            # Check for appropriation category
-            for pattern in ['Operation and Maintenance', 'Procurement', 'Military Personnel', 
-                           'Research, Development', 'RDTE']:
-                if pattern in line:
-                    current_category = pattern
-                    # Extract branch from full title if present
-                    if 'Army' in line:
-                        current_branch = 'Army'
-                    elif 'Navy' in line:
-                        current_branch = 'Navy'
-                    elif 'Air Force' in line:
-                        current_branch = 'Air Force'
-                    elif 'Marine' in line:
-                        current_branch = 'Marines'
+            # Detect Budget Activity headers
+            # Format: "Budget Activity 01: Pay and Allowances of Officers"
+            ba_match = re.search(r'Budget Activity\s+(\d+):\s*(.+?)(?:\s+\d{1,3},\d{3}|$)', line, re.IGNORECASE)
+            if ba_match:
+                current_ba_number = ba_match.group(1)
+                current_budget_activity = ba_match.group(2).strip()
+                continue
             
-            # Look for lines with budget amounts
-            # Pattern: text followed by multiple large numbers
-            amount_match = re.search(r'^([A-Za-z][A-Za-z\s\-&,()]{10,60}?)\s+(\d{1,3}(?:,\d{3}){2,})', line)
+            # Skip subtotal lines
+            if 'Subtotal' in line or 'SUBTOTAL' in line:
+                continue
             
-            if amount_match and current_branch and current_category:
-                program_name = amount_match.group(1).strip()
-                amount_str = amount_match.group(2)
-                amount = int(amount_str.replace(',', ''))
+            # Extract data lines with amounts
+            # Pattern: Line item text followed by 1-4 large numbers
+            # Example: "Pay and Allowances    13,599,547 13,599,547"
+            # Example: "FY 2023 Appropriated Base 302,538"
+            # Example: "Underexecution of strength -15,425"
+            
+            # Look for lines with dollar amounts (at least 4 digits with commas)
+            amounts = re.findall(r'-?\d{1,3}(?:,\d{3})+', line)
+            
+            if len(amounts) > 0 and current_category and current_branch:
+                # Extract the line item text (everything before the first number)
+                text_part = re.split(r'\s+-?\d{1,3}(?:,\d{3})+', line)[0].strip()
                 
-                # Skip small amounts (likely codes or page numbers)
-                if amount < 10000:
+                # Skip if text is too short or looks like a header
+                if len(text_part) < 5:
                     continue
+                if text_part.upper() == text_part and len(text_part) < 15:  # All caps short = header
+                    continue
+                
+                # Parse amounts
+                parsed_amounts = [int(amt.replace(',', '').replace('-', '')) for amt in amounts]
+                
+                # Use the largest amount (usually the most relevant)
+                main_amount = max(parsed_amounts)
+                
+                # Skip very small amounts (likely page numbers or codes)
+                if main_amount < 1000:
+                    continue
+                
+                # Determine if this is a decrease
+                is_decrease = any('-' in amt for amt in amounts)
                 
                 lines.append({
                     'fiscal_year': fiscal_year,
                     'appropriation_category': current_category,
                     'branch': current_branch,
-                    'program_element': program_name,
-                    'budget_amount': amount,
+                    'budget_activity_number': current_ba_number or '',
+                    'budget_activity_title': current_budget_activity or '',
+                    'program_element': text_part[:100],  # Truncate long names
+                    'budget_amount': main_amount,
+                    'is_decrease': is_decrease,
+                    'raw_amounts': amounts[:3],  # Keep first 3 for reference
                     'file': filename,
                     'type': 'baseline'
                 })
