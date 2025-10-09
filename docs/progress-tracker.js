@@ -235,8 +235,8 @@ class ProgressTracker {
         // Weight DD1414 CSVs more heavily
         const dd1414Weight = 0.7;
         const otherWeight = 0.3;
-        const dd1414Progress = (dd1414CSVs / 24) * 100; // 24 DD1414 PDFs available
-        const otherProgress = ((totalCSVs - dd1414CSVs) / (totalPDFs - 24)) * 100;
+        const dd1414Progress = (dd1414CSVs / 20) * 100; // 20 DD1414 PDFs available
+        const otherProgress = ((totalCSVs - dd1414CSVs) / (totalPDFs - 20)) * 100;
         
         return Math.min(100, Math.round(dd1414Progress * dd1414Weight + otherProgress * otherWeight));
     }
