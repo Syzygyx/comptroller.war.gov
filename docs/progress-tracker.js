@@ -106,12 +106,12 @@ class ProgressTracker {
         this.tasks = [
             {
                 id: 'download_dd1414',
-                name: 'Download DD1414 Documents (2007-Present)',
+                name: 'Download DD1414 Documents (1997-Present)',
                 start: '2024-01-01',
                 end: '2024-12-31',
                 progress: this.calculateDD1414Progress(totalYears),
                 dependencies: [],
-                description: `Download all DD1414 Base for Reprogramming Actions documents from 2007 to present (19 years total - DD1414 form introduced in FY 2007)`
+                description: `Download all DD1414 Base for Reprogramming Actions documents from 1997 to present (28 years total - Currently have 20 documents from 2007-2025: 19/28 years = 68%)`
             },
             {
                 id: 'download_other_docs',
@@ -192,10 +192,14 @@ class ProgressTracker {
      * Calculate DD1414 download progress
      */
     calculateDD1414Progress(totalYears) {
-        const dd1414Count = (this.fileAnalysis && this.fileAnalysis.pdfs && this.fileAnalysis.pdfs.dd1414) ? this.fileAnalysis.pdfs.dd1414 : 0;
-        // DD1414 form was introduced in FY 2007, so calculate based on 2007-2025 (19 years)
-        const dd1414Years = 19; // 2007-2025
-        return Math.min(100, Math.round((dd1414Count / dd1414Years) * 100));
+        // DD1414 is specifically "Base for Reprogramming Actions" documents
+        // We have 20 actual DD1414 documents from 2007-2025 (19 years)
+        // Goal is 1997-present (28 years), but DD1414 form was introduced in FY 2007
+        const dd1414BaseDocs = 20; // Actual "Base for Reprogramming Actions" documents
+        const dd1414Years = 19; // Years we have DD1414 data (2007-2025)
+        const totalGoalYears = 28; // Total years from 1997-2025
+        const dd1414Progress = Math.round((dd1414Years / totalGoalYears) * 100);
+        return Math.min(100, dd1414Progress);
     }
 
     /**
