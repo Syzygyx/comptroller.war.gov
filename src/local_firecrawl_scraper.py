@@ -61,6 +61,17 @@ class LocalFirecrawlScraper:
                         'pdfs_downloaded': 0,
                         'errors': 0
                     }
+                # Convert lists back to sets
+                if 'scraped_urls' in metadata and isinstance(metadata['scraped_urls'], list):
+                    metadata['scraped_urls'] = set(metadata['scraped_urls'])
+                elif 'scraped_urls' not in metadata:
+                    metadata['scraped_urls'] = set()
+                    
+                if 'pdf_urls' in metadata and isinstance(metadata['pdf_urls'], list):
+                    metadata['pdf_urls'] = set(metadata['pdf_urls'])
+                elif 'pdf_urls' not in metadata:
+                    metadata['pdf_urls'] = set()
+                    
                 return metadata
         return {
             'last_run': None,
