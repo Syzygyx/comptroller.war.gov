@@ -1,0 +1,173 @@
+{
+  "flows": [
+    {
+      "source": "Operation and Maintenance",
+      "target": "Army",
+      "value": 21,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "category_to_branch"
+    },
+    {
+      "source": "Army",
+      "target": "Operating Forces +21",
+      "value": 21,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "branch_to_activity"
+    },
+    {
+      "source": "Operation and Maintenance",
+      "target": "Marine Corps",
+      "value": 1981,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "category_to_branch"
+    },
+    {
+      "source": "Marine Corps",
+      "target": "Operating Forces +1,981",
+      "value": 1981,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "branch_to_activity"
+    },
+    {
+      "source": "Operation and Maintenance",
+      "target": "Air Force",
+      "value": 6570,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "category_to_branch"
+    },
+    {
+      "source": "Air Force",
+      "target": "Training and Recruiting +6,570",
+      "value": 6570,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "branch_to_activity"
+    },
+    {
+      "source": "Other Procurement",
+      "target": "Army",
+      "value": 26700,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "category_to_branch"
+    },
+    {
+      "source": "Army",
+      "target": "Other Support Equipment +26,700",
+      "value": 26700,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "branch_to_activity"
+    },
+    {
+      "source": "Other Procurement",
+      "target": "Air Force",
+      "value": 390,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "category_to_branch"
+    },
+    {
+      "source": "Air Force",
+      "target": "Other Base Maintenance and Support Equip",
+      "value": 390,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "branch_to_activity"
+    },
+    {
+      "source": "Research, Development, Test, and Evaluation",
+      "target": "Army",
+      "value": 330,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "category_to_branch"
+    },
+    {
+      "source": "Army",
+      "target": "Operational Systems Development",
+      "value": 330,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "branch_to_activity"
+    },
+    {
+      "source": "Research, Development, Test, and Evaluation",
+      "target": "Navy",
+      "value": 410,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "category_to_branch"
+    },
+    {
+      "source": "Navy",
+      "target": "Advanced Component Development and Proto",
+      "value": 410,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "branch_to_activity"
+    },
+    {
+      "source": "Research, Development, Test, and Evaluation",
+      "target": "Defense-Wide",
+      "value": 9900,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "category_to_branch"
+    },
+    {
+      "source": "Defense-Wide",
+      "target": "Advanced Technology Development",
+      "value": 9900,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "branch_to_activity"
+    },
+    {
+      "source": "Research, Development, Test, and Evaluation",
+      "target": "Air Force",
+      "value": 3300,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "category_to_branch"
+    },
+    {
+      "source": "Air Force",
+      "target": "Operational Systems Development",
+      "value": 3300,
+      "fiscal_years": [
+        "2005"
+      ],
+      "type": "branch_to_activity"
+    }
+  ],
+  "metadata": {
+    "total_flows": 18,
+    "total_value": 99204,
+    "fiscal_years": [
+      "2005"
+    ]
+  }
+}

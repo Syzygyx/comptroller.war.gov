@@ -1,0 +1,35 @@
+{
+  "chunks": [
+    {
+      "id": "chunk_001",
+      "text": "DD1414 Base for Reprogramming Actions fiscal year 2024",
+      "embedding": [0.1, 0.2, 0.3, 0.4, 0.5],
+      "metadata": {
+        "source": "dd1414_enhanced_data.csv",
+        "fiscal_year": 2024,
+        "document_type": "Base for Reprogramming Actions"
+      }
+    },
+    {
+      "id": "chunk_002", 
+      "text": "Reprogramming actions for Department of Defense programs",
+      "embedding": [0.2, 0.3, 0.4, 0.5, 0.6],
+      "metadata": {
+        "source": "Reprogramming_Overview_extracted.csv",
+        "organization": "Department of Defense"
+      }
+    },
+    {
+      "id": "chunk_003",
+      "text": "Call Memo for operational necessity requirements",
+      "embedding": [0.3, 0.4, 0.5, 0.6, 0.7],
+      "metadata": {
+        "source": "dd1414_enhanced_data.csv",
+        "document_type": "Call Memo"
+      }
+    }
+  ],
+  "total_chunks": 3,
+  "embedding_dimension": 5,
+  "created_date": "2024-10-09T11:30:00Z"
+}

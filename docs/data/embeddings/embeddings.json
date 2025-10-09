@@ -1,0 +1,13 @@
+{
+  "embeddings": {
+    "chunk_001": [0.1, 0.2, 0.3, 0.4, 0.5],
+    "chunk_002": [0.2, 0.3, 0.4, 0.5, 0.6],
+    "chunk_003": [0.3, 0.4, 0.5, 0.6, 0.7]
+  },
+  "metadata": {
+    "model": "text-embedding-ada-002",
+    "dimension": 5,
+    "total_vectors": 3,
+    "created_date": "2024-10-09T11:30:00Z"
+  }
+}
