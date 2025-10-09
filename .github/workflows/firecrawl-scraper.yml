@@ -1,0 +1,165 @@
+name: Weekly Firecrawl Scraper
+
+on:
+  schedule:
+    # Run every Monday at 2 AM UTC
+    - cron: '0 2 * * 1'
+  workflow_dispatch:  # Allow manual trigger
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/firecrawl_scraper.py'
+      - '.github/workflows/firecrawl-scraper.yml'
+
+jobs:
+  firecrawl-scrape:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y tesseract-ocr poppler-utils
+    
+    - name: Install Python dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install firecrawl-py aiohttp
+    
+    - name: Create data directories
+      run: |
+        mkdir -p data/pdfs
+        mkdir -p data/csv
+        mkdir -p data/embeddings
+        mkdir -p data/validation
+        mkdir -p logs
+    
+    - name: Run Firecrawl scraper
+      env:
+        FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        LLM_PROVIDER: openrouter
+      run: |
+        echo "🚀 Starting Firecrawl comprehensive scraping..."
+        python src/firecrawl_scraper.py --max-pages 100 --max-concurrent 10
+    
+    - name: Process new PDFs with OCR
+      env:
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        LLM_PROVIDER: openrouter
+      run: |
+        echo "🔍 Processing new PDFs with OCR..."
+        python src/main.py --process-only
+    
+    - name: Generate RAG embeddings
+      env:
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        LLM_PROVIDER: openrouter
+      run: |
+        echo "🧠 Generating RAG embeddings..."
+        python src/rag_processor.py --rebuild || echo "RAG processing failed, continuing..."
+    
+    - name: Copy data to docs folder
+      run: |
+        echo "📋 Copying data to docs folder..."
+        # Copy CSV files
+        cp -r data/csv/* docs/data/ 2>/dev/null || true
+        
+        # Copy metadata
+        cp data/metadata.json docs/data/ 2>/dev/null || true
+        
+        # Copy validation reports
+        cp data/validation/validation_summary.json docs/data/ 2>/dev/null || true
+        
+        # Copy embeddings for client-side RAG
+        cp -r data/embeddings/* docs/data/embeddings/ 2>/dev/null || true
+    
+    - name: Update timestamp
+      run: |
+        echo "⏰ Updating timestamp..."
+        echo "const lastUpdated = '$(date -u +"%Y-%m-%d %H:%M:%S UTC")';" > docs/last-updated.js
+    
+    - name: Commit and push changes
+      run: |
+        echo "📝 Committing changes..."
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Add all changes
+        git add .
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Weekly Firecrawl scrape: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
+          
+          - Comprehensive site scraping with Firecrawl
+          - New PDFs processed with OCR
+          - RAG embeddings updated
+          - Data synchronized to docs folder"
+          
+          git push origin main
+        fi
+    
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
+      with:
+        artifact_name: deployment
+        path: docs
+    
+    - name: Report scraping results
+      run: |
+        echo "## Weekly Firecrawl Scraping Results" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 📊 Scraping Statistics" >> $GITHUB_STEP_SUMMARY
+        
+        # Count PDFs
+        PDF_COUNT=$(find data/pdfs -name "*.pdf" | wc -l)
+        echo "- Total PDFs: $PDF_COUNT" >> $GITHUB_STEP_SUMMARY
+        
+        # Count DD1414 documents
+        DD1414_COUNT=$(find data/pdfs -name "*DD1414*" -o -name "*dd1414*" | wc -l)
+        echo "- DD1414 documents: $DD1414_COUNT" >> $GITHUB_STEP_SUMMARY
+        
+        # Count CSV files
+        CSV_COUNT=$(find data/csv -name "*.csv" | wc -l)
+        echo "- CSV files: $CSV_COUNT" >> $GITHUB_STEP_SUMMARY
+        
+        # Check if embeddings exist
+        if [ -f "data/embeddings/chunks.json" ]; then
+          EMBEDDING_COUNT=$(jq length data/embeddings/chunks.json 2>/dev/null || echo "0")
+          echo "- RAG embeddings: $EMBEDDING_COUNT chunks" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "- RAG embeddings: Not available" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 🎯 Next Steps" >> $GITHUB_STEP_SUMMARY
+        echo "- Review new documents in the data/pdfs folder" >> $GITHUB_STEP_SUMMARY
+        echo "- Check the updated progress tracker on the main page" >> $GITHUB_STEP_SUMMARY
+        echo "- Verify chat widget functionality with new data" >> $GITHUB_STEP_SUMMARY
