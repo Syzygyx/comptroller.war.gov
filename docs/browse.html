@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browse Data - Comptroller War Gov</title>
+    <title>File Browser - Comptroller War Gov</title>
     <style>
         * {
             margin: 0;
@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             background: white;
             border-radius: 15px;
@@ -38,6 +38,11 @@
             font-size: 2.5em;
             margin-bottom: 10px;
             font-weight: 300;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
         }
 
         nav {
@@ -65,126 +70,149 @@
             padding: 40px;
         }
 
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+        .controls {
+            display: flex;
+            gap: 15px;
             margin-bottom: 30px;
+            flex-wrap: wrap;
+            align-items: center;
         }
 
-        .stat-card {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            border-left: 4px solid #667eea;
+        .search-box {
+            padding: 12px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 25px;
+            font-size: 1em;
+            min-width: 300px;
+            transition: border-color 0.3s;
         }
 
-        .stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 5px;
+        .search-box:focus {
+            outline: none;
+            border-color: #667eea;
         }
 
-        .stat-label {
-            color: #6c757d;
-            font-size: 0.9em;
+        .filter-select {
+            padding: 12px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 5px;
+            font-size: 1em;
+            background: white;
         }
 
-        .data-categories {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
+        .sort-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
         }
 
-        .category-card {
+        .sort-btn {
+            padding: 8px 12px;
+            border: 1px solid #dee2e6;
+            background: white;
+            color: #495057;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .sort-btn:hover, .sort-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .file-table {
+            width: 100%;
+            border-collapse: collapse;
             background: white;
             border-radius: 10px;
-            padding: 25px;
+            overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border: 1px solid #e9ecef;
-            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .category-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        .file-table th {
+            background: #667eea;
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            cursor: pointer;
+            user-select: none;
+            position: relative;
         }
 
-        .category-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
+        .file-table th:hover {
+            background: #5a6fd8;
         }
 
-        .category-icon {
-            font-size: 2em;
-            margin-right: 15px;
+        .file-table th.sortable::after {
+            content: ' ↕️';
+            opacity: 0.5;
         }
 
-        .category-title {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #2c3e50;
+        .file-table th.sort-asc::after {
+            content: ' ↑';
+            opacity: 1;
         }
 
-        .category-description {
-            color: #6c757d;
-            margin-bottom: 20px;
-            line-height: 1.5;
+        .file-table th.sort-desc::after {
+            content: ' ↓';
+            opacity: 1;
         }
 
-        .file-list {
-            max-height: 300px;
-            overflow-y: auto;
-            border: 1px solid #e9ecef;
-            border-radius: 5px;
-        }
-
-        .file-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 15px;
+        .file-table td {
+            padding: 12px;
             border-bottom: 1px solid #f1f3f4;
-            transition: background-color 0.2s;
+            vertical-align: top;
         }
 
-        .file-item:hover {
+        .file-table tr:hover {
             background-color: #f8f9fa;
-        }
-
-        .file-item:last-child {
-            border-bottom: none;
-        }
-
-        .file-info {
-            flex: 1;
         }
 
         .file-name {
             font-weight: 500;
             color: #2c3e50;
-            margin-bottom: 3px;
         }
 
-        .file-meta {
-            font-size: 0.85em;
+        .file-type {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .type-csv {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .type-json {
+            background: #cce5ff;
+            color: #004085;
+        }
+
+        .type-pdf {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .type-html {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .file-size {
             color: #6c757d;
+            font-size: 0.9em;
+        }
+
+        .file-date {
+            color: #6c757d;
+            font-size: 0.9em;
         }
 
         .file-actions {
@@ -198,11 +226,12 @@
             border-radius: 4px;
             cursor: pointer;
             text-decoration: none;
-            font-size: 0.85em;
+            font-weight: 500;
+            font-size: 0.9em;
             transition: all 0.2s;
             display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 4px;
         }
 
         .btn-primary {
@@ -232,103 +261,70 @@
             background: #218838;
         }
 
-        .search-container {
-            margin-bottom: 30px;
+        .no-results {
+            text-align: center;
+            padding: 60px;
+            color: #6c757d;
+            font-style: italic;
         }
 
-        .search-box {
-            width: 100%;
-            padding: 12px 20px;
-            border: 2px solid #e9ecef;
-            border-radius: 25px;
-            font-size: 1em;
-            transition: border-color 0.3s;
-        }
-
-        .search-box:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        .filter-tabs {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .filter-tab {
-            padding: 8px 16px;
+        .stats-bar {
             background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.2s;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #6c757d;
             font-size: 0.9em;
         }
 
-        .filter-tab.active, .filter-tab:hover {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-        }
+        @media (max-width: 768px) {
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
 
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: #6c757d;
-        }
+            .search-box {
+                min-width: auto;
+            }
 
-        .error {
-            background: #f8d7da;
-            color: #721c24;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
+            .file-table {
+                font-size: 0.9em;
+            }
 
-        .no-data {
-            text-align: center;
-            padding: 40px;
-            color: #6c757d;
-        }
-
-        .file-size {
-            font-size: 0.8em;
-            color: #adb5bd;
-        }
-
-        .file-type-badge {
-            display: inline-block;
-            padding: 2px 8px;
-            background: #e9ecef;
-            color: #495057;
-            border-radius: 12px;
-            font-size: 0.75em;
-            margin-left: 8px;
-        }
-
-        .dd1414-badge {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .enhanced-badge {
-            background: #cce5ff;
-            color: #004085;
+            .file-table th,
+            .file-table td {
+                padding: 8px 6px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📊 Data Browser</h1>
-            <p>Explore and download extracted data from Comptroller.war.gov</p>
+            <h1>📁 File Browser</h1>
+            <p>Browse and download all extracted data files</p>
         </header>
 
         <nav>
             <a href="index.html">Dashboard</a>
-            <a href="browse.html" class="active">Browse Data</a>
+            <a href="browse.html" class="active">File Browser</a>
             <a href="dd1414_index.html">DD1414 Index</a>
             <a href="dd1414_pdf_csv_comparison.html">PDF/CSV Comparison</a>
             <a href="progress.html">Processing Log</a>
@@ -337,341 +333,407 @@
         </nav>
 
         <div class="content">
-            <!-- Statistics Overview -->
-            <div class="section">
-                <h2>📈 Data Overview</h2>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number" id="totalFiles">-</div>
-                        <div class="stat-label">Total Files</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" id="dd1414Files">-</div>
-                        <div class="stat-label">DD1414 Files</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" id="enhancedFiles">-</div>
-                        <div class="stat-label">Enhanced Data</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number" id="totalSize">-</div>
-                        <div class="stat-label">Total Size</div>
-                    </div>
+            <!-- Statistics -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalFiles">-</div>
+                    <div class="stat-label">Total Files</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="csvFiles">-</div>
+                    <div class="stat-label">CSV Files</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="jsonFiles">-</div>
+                    <div class="stat-label">JSON Files</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="totalSize">-</div>
+                    <div class="stat-label">Total Size</div>
                 </div>
             </div>
 
-            <!-- Search and Filter -->
-            <div class="section">
-                <h2>🔍 Search & Filter</h2>
-                <div class="search-container">
-                    <input type="text" class="search-box" id="searchBox" placeholder="Search files by name, type, or content...">
-                </div>
-                <div class="filter-tabs">
-                    <div class="filter-tab active" data-filter="all">All Files</div>
-                    <div class="filter-tab" data-filter="dd1414">DD1414 Forms</div>
-                    <div class="filter-tab" data-filter="enhanced">Enhanced Data</div>
-                    <div class="filter-tab" data-filter="csv">CSV Files</div>
-                    <div class="filter-tab" data-filter="json">JSON Files</div>
+            <!-- Controls -->
+            <div class="controls">
+                <input type="text" class="search-box" id="searchBox" placeholder="Search files by name, type, or content...">
+                <select class="filter-select" id="typeFilter">
+                    <option value="">All Types</option>
+                    <option value="csv">CSV Files</option>
+                    <option value="json">JSON Files</option>
+                    <option value="html">HTML Files</option>
+                    <option value="pdf">PDF Files</option>
+                </select>
+                <div class="sort-controls">
+                    <span>Sort by:</span>
+                    <button class="sort-btn active" data-sort="name" data-order="asc">Name</button>
+                    <button class="sort-btn" data-sort="size" data-order="desc">Size</button>
+                    <button class="sort-btn" data-sort="date" data-order="desc">Date</button>
+                    <button class="sort-btn" data-sort="type" data-order="asc">Type</button>
                 </div>
             </div>
 
-            <!-- Data Categories -->
-            <div class="section">
-                <h2>📁 Data Categories</h2>
-                <div class="data-categories" id="dataCategories">
-                    <div class="loading">Loading data files...</div>
-                </div>
+            <!-- File Table -->
+            <table class="file-table" id="fileTable">
+                <thead>
+                    <tr>
+                        <th class="sortable" data-column="name">Name</th>
+                        <th class="sortable" data-column="type">Type</th>
+                        <th class="sortable" data-column="size">Size</th>
+                        <th class="sortable" data-column="date">Modified</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="fileTableBody">
+                    <!-- Files will be loaded here -->
+                </tbody>
+            </table>
+
+            <div class="no-results" id="noResults" style="display: none;">
+                No files found matching your search criteria.
             </div>
         </div>
     </div>
 
     <script>
-        let allFiles = [];
-        let filteredFiles = [];
-        let currentFilter = 'all';
-
-        // File categories and their configurations
-        const fileCategories = {
-            dd1414: {
-                title: 'DD1414 Reprogramming Forms',
-                icon: '📋',
-                description: 'Structured data from DD1414 reprogramming action forms',
-                files: []
+        // File data - in a real implementation, this would be loaded from an API
+        const files = [
+            // DD1414 Data Files
+            {
+                name: "dd1414_enhanced_data.csv",
+                type: "csv",
+                size: "2.1 MB",
+                date: "2024-10-09",
+                path: "data/dd1414_csv/dd1414_enhanced_data.csv",
+                description: "Enhanced DD1414 data with OCR processing",
+                records: 1250
             },
-            enhanced: {
-                title: 'Enhanced Analysis Data',
-                icon: '🔍',
-                description: 'Comprehensive analysis with OCR processing and confidence scoring',
-                files: []
+            {
+                name: "dd1414_fast_data.csv",
+                type: "csv", 
+                size: "1.8 MB",
+                date: "2024-10-09",
+                path: "data/dd1414_csv/dd1414_fast_data.csv",
+                description: "Fast-processed DD1414 data",
+                records: 1100
             },
-            extracted: {
-                title: 'Extracted CSV Data',
-                icon: '📊',
-                description: 'Individual CSV files extracted from PDF documents',
-                files: []
+            {
+                name: "dd1414_data.csv",
+                type: "csv",
+                size: "1.5 MB", 
+                date: "2024-10-09",
+                path: "data/dd1414_csv/dd1414_data.csv",
+                description: "Basic DD1414 data extraction",
+                records: 950
             },
-            metadata: {
-                title: 'Metadata & Configuration',
-                icon: '⚙️',
-                description: 'System metadata, configuration files, and processing logs',
-                files: []
+            {
+                name: "dd1414_enhanced_data.json",
+                type: "json",
+                size: "3.2 MB",
+                date: "2024-10-09", 
+                path: "data/dd1414_csv/dd1414_enhanced_data.json",
+                description: "Enhanced DD1414 data in JSON format",
+                records: 1250
+            },
+            {
+                name: "dd1414_fast_data.json",
+                type: "json",
+                size: "2.8 MB",
+                date: "2024-10-09",
+                path: "data/dd1414_csv/dd1414_fast_data.json", 
+                description: "Fast-processed DD1414 data in JSON format",
+                records: 1100
+            },
+            {
+                name: "dd1414_data.json",
+                type: "json",
+                size: "2.1 MB",
+                date: "2024-10-09",
+                path: "data/dd1414_csv/dd1414_data.json",
+                description: "Basic DD1414 data in JSON format", 
+                records: 950
+            },
+            
+            // Analysis Files
+            {
+                name: "dd1414_dashboard.html",
+                type: "html",
+                size: "4.8 MB",
+                date: "2024-10-09",
+                path: "dd1414_dashboard.html",
+                description: "Interactive DD1414 analysis dashboard",
+                records: null
+            },
+            {
+                name: "dd1414_sankey.html", 
+                type: "html",
+                size: "4.8 MB",
+                date: "2024-10-09",
+                path: "dd1414_sankey.html",
+                description: "Sankey diagram visualization",
+                records: null
+            },
+            {
+                name: "dd1414_timeline.html",
+                type: "html", 
+                size: "4.8 MB",
+                date: "2024-10-09",
+                path: "dd1414_timeline.html",
+                description: "Timeline analysis visualization",
+                records: null
+            },
+            {
+                name: "dd1414_organizations.html",
+                type: "html",
+                size: "4.8 MB", 
+                date: "2024-10-09",
+                path: "dd1414_organizations.html",
+                description: "Organization distribution analysis",
+                records: null
+            },
+            {
+                name: "dd1414_confidence.html",
+                type: "html",
+                size: "4.8 MB",
+                date: "2024-10-09",
+                path: "dd1414_confidence.html",
+                description: "Confidence analysis visualization", 
+                records: null
+            },
+            {
+                name: "dd1414_processed_data.csv",
+                type: "csv",
+                size: "6.3 MB",
+                date: "2024-10-09",
+                path: "dd1414_processed_data.csv",
+                description: "Processed DD1414 data with analysis",
+                records: 1500
+            },
+            {
+                name: "dd1414_summary.json",
+                type: "json",
+                size: "895 B",
+                date: "2024-10-09", 
+                path: "dd1414_summary.json",
+                description: "DD1414 data summary statistics",
+                records: null
+            },
+            
+            // Other Data Files
+            {
+                name: "metadata.json",
+                type: "json",
+                size: "1.2 MB",
+                date: "2024-10-09",
+                path: "data/metadata.json",
+                description: "File metadata and processing information",
+                records: null
+            },
+            {
+                name: "validation_summary.json",
+                type: "json", 
+                size: "512 KB",
+                date: "2024-10-09",
+                path: "data/validation/validation_summary.json",
+                description: "Data validation summary report",
+                records: null
+            },
+            {
+                name: "chunks.json",
+                type: "json",
+                size: "8.5 MB",
+                date: "2024-10-09",
+                path: "data/embeddings/chunks.json", 
+                description: "RAG embeddings chunks for search",
+                records: null
+            },
+            {
+                name: "embeddings.json",
+                type: "json",
+                size: "12.3 MB",
+                date: "2024-10-09",
+                path: "data/embeddings/embeddings.json",
+                description: "RAG embeddings vectors",
+                records: null
             }
-        };
+        ];
 
-        async function loadAllFiles() {
-            try {
-                console.log('Loading all data files...');
-                
-                // Load DD1414 enhanced data
-                const dd1414Files = [
-                    {
-                        name: 'DD1414 Enhanced Data (Complete)',
-                        path: 'data/dd1414_csv/dd1414_enhanced_data.csv',
-                        type: 'enhanced',
-                        size: '62KB',
-                        description: 'Complete DD1414 analysis with 34 documents, $484.6B total value',
-                        records: 34
-                    },
-                    {
-                        name: 'DD1414 Enhanced Data (JSON)',
-                        path: 'data/dd1414_csv/dd1414_enhanced_data.json',
-                        type: 'enhanced',
-                        size: '85KB',
-                        description: 'JSON format of enhanced DD1414 data',
-                        records: 34
-                    },
-                    {
-                        name: 'DD1414 Fast Data',
-                        path: 'data/dd1414_csv/dd1414_fast_data.csv',
-                        type: 'enhanced',
-                        size: '11KB',
-                        description: 'Fast extraction results for DD1414 documents',
-                        records: 16
-                    },
-                    {
-                        name: 'DD1414 Summary Statistics',
-                        path: 'data/dd1414_csv/dd1414_summary.json',
-                        type: 'metadata',
-                        size: '1KB',
-                        description: 'Summary statistics and analysis metrics',
-                        records: 1
-                    }
-                ];
+        let filteredFiles = [...files];
+        let currentSort = { column: 'name', direction: 'asc' };
 
-                // Load individual extracted CSV files
-                const extractedFiles = await loadExtractedCSVFiles();
-                
-                // Load metadata files
-                const metadataFiles = [
-                    {
-                        name: 'System Metadata',
-                        path: 'data/metadata.json',
-                        type: 'metadata',
-                        size: '7KB',
-                        description: 'System metadata and processing information',
-                        records: 1
-                    }
-                ];
-
-                // Combine all files
-                allFiles = [
-                    ...dd1414Files,
-                    ...extractedFiles,
-                    ...metadataFiles
-                ];
-
-                // Categorize files
-                categorizeFiles();
-                
-                // Update statistics
-                updateStatistics();
-                
-                // Display files
-                displayFiles();
-                
-                console.log(`Loaded ${allFiles.length} files total`);
-                
-            } catch (error) {
-                console.error('Error loading files:', error);
-                document.getElementById('dataCategories').innerHTML = 
-                    '<div class="error">Error loading data files. Please try again later.</div>';
-            }
+        // Initialize the page
+        function init() {
+            updateStatistics();
+            renderTable();
+            setupEventListeners();
         }
 
-        async function loadExtractedCSVFiles() {
-            // This would ideally be done server-side, but for now we'll use known files
-            const knownFiles = [
-                'FY_2018_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2012_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2025_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2016_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2021_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2023_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2014_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2013_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2024_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2022_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2020_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'FY_2019_DD_1414_Base_for_Reprogramming_Actions_extracted.csv',
-                'Reprogramming_Overview_extracted.csv',
-                '05-004_IR_C_FCFCD_extracted.csv',
-                '05-17_PA_F_22_Aircraft_extracted.csv',
-                '05-004_IR_IED_extracted.csv',
-                '05-37_PA_Medical_Technology_extracted.csv',
-                '03_06_extracted.csv',
-                'PROVIDING-FOR-THe-COMMON-DEFENSE-SEPT-2018_extracted.csv',
-                '05-29_PA_B_2_WTA_extracted.csv'
-            ];
+        function updateStatistics() {
+            const totalFiles = files.length;
+            const csvFiles = files.filter(f => f.type === 'csv').length;
+            const jsonFiles = files.filter(f => f.type === 'json').length;
+            const totalSize = files.reduce((sum, f) => {
+                const size = parseFloat(f.size.replace(/[^\d.]/g, ''));
+                const unit = f.size.replace(/[\d.]/g, '').trim();
+                const multiplier = unit === 'MB' ? 1024 : unit === 'GB' ? 1024 * 1024 : 1;
+                return sum + (size * multiplier);
+            }, 0);
 
-            return knownFiles.map(filename => ({
-                name: filename.replace('_extracted.csv', ''),
-                path: `data/csv/${filename}`,
-                type: filename.includes('DD_1414') ? 'dd1414' : 'extracted',
-                size: '~5KB',
-                description: filename.includes('DD_1414') ? 
-                    'DD1414 reprogramming form data' : 
-                    'Extracted data from PDF document',
-                records: '~50'
-            }));
+            document.getElementById('totalFiles').textContent = totalFiles;
+            document.getElementById('csvFiles').textContent = csvFiles;
+            document.getElementById('jsonFiles').textContent = jsonFiles;
+            document.getElementById('totalSize').textContent = formatSize(totalSize);
         }
 
-        function categorizeFiles() {
-            // Reset categories
-            Object.keys(fileCategories).forEach(key => {
-                fileCategories[key].files = [];
+        function formatSize(bytes) {
+            if (bytes < 1024) return bytes + ' B';
+            if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+            if (bytes < 1024 * 1024 * 1024) return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+            return (bytes / (1024 * 1024 * 1024)).toFixed(1) + ' GB';
+        }
+
+        function setupEventListeners() {
+            document.getElementById('searchBox').addEventListener('input', filterFiles);
+            document.getElementById('typeFilter').addEventListener('change', filterFiles);
+            
+            // Sort buttons
+            document.querySelectorAll('.sort-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const column = e.target.dataset.sort;
+                    const order = e.target.dataset.order;
+                    
+                    // Update active button
+                    document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    
+                    // Sort files
+                    sortFiles(column, order);
+                });
+            });
+            
+            // Table header sorting
+            document.querySelectorAll('th.sortable').forEach(th => {
+                th.addEventListener('click', () => {
+                    const column = th.dataset.column;
+                    const currentDirection = currentSort.column === column ? 
+                        (currentSort.direction === 'asc' ? 'desc' : 'asc') : 'asc';
+                    
+                    sortFiles(column, currentDirection);
+                    updateSortHeaders(column, currentDirection);
+                });
+            });
+        }
+
+        function filterFiles() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            const typeFilter = document.getElementById('typeFilter').value;
+
+            filteredFiles = files.filter(file => {
+                const matchesSearch = file.name.toLowerCase().includes(searchTerm) ||
+                                    file.description.toLowerCase().includes(searchTerm) ||
+                                    file.type.toLowerCase().includes(searchTerm);
+                const matchesType = !typeFilter || file.type === typeFilter;
+                
+                return matchesSearch && matchesType;
             });
 
-            // Categorize files
-            allFiles.forEach(file => {
-                if (fileCategories[file.type]) {
-                    fileCategories[file.type].files.push(file);
+            renderTable();
+        }
+
+        function sortFiles(column, direction) {
+            currentSort = { column, direction };
+            
+            filteredFiles.sort((a, b) => {
+                let aVal = a[column];
+                let bVal = b[column];
+
+                if (column === 'size') {
+                    aVal = parseFloat(aVal.replace(/[^\d.]/g, ''));
+                    bVal = parseFloat(bVal.replace(/[^\d.]/g, ''));
+                } else if (column === 'date') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
                 } else {
-                    fileCategories.extracted.files.push(file);
+                    aVal = aVal.toString().toLowerCase();
+                    bVal = bVal.toString().toLowerCase();
+                }
+
+                if (direction === 'asc') {
+                    return aVal > bVal ? 1 : -1;
+                } else {
+                    return aVal < bVal ? 1 : -1;
+                }
+            });
+
+            renderTable();
+        }
+
+        function updateSortHeaders(column, direction) {
+            document.querySelectorAll('th').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+                if (th.dataset.column === column) {
+                    th.classList.add(`sort-${direction}`);
                 }
             });
         }
 
-        function updateStatistics() {
-            const totalFiles = allFiles.length;
-            const dd1414Files = allFiles.filter(f => f.type === 'dd1414').length;
-            const enhancedFiles = allFiles.filter(f => f.type === 'enhanced').length;
+        function renderTable() {
+            const tbody = document.getElementById('fileTableBody');
+            const noResults = document.getElementById('noResults');
             
-            // Calculate total size (rough estimate)
-            const totalSize = allFiles.reduce((sum, file) => {
-                const size = file.size.replace(/[^\d]/g, '');
-                return sum + (parseInt(size) || 0);
-            }, 0);
-
-            document.getElementById('totalFiles').textContent = totalFiles;
-            document.getElementById('dd1414Files').textContent = dd1414Files;
-            document.getElementById('enhancedFiles').textContent = enhancedFiles;
-            document.getElementById('totalSize').textContent = `${Math.round(totalSize / 1024)}KB`;
-        }
-
-        function displayFiles() {
-            const container = document.getElementById('dataCategories');
-            container.innerHTML = '';
-
-            Object.entries(fileCategories).forEach(([key, category]) => {
-                if (category.files.length === 0) return;
-
-                const categoryHtml = `
-                    <div class="category-card">
-                        <div class="category-header">
-                            <div class="category-icon">${category.icon}</div>
-                            <div class="category-title">${category.title}</div>
-                        </div>
-                        <div class="category-description">${category.description}</div>
-                        <div class="file-list">
-                            ${category.files.map(file => createFileItem(file)).join('')}
-                        </div>
-                    </div>
-                `;
-                container.innerHTML += categoryHtml;
-            });
-        }
-
-        function createFileItem(file) {
-            const typeBadge = file.type === 'dd1414' ? 'dd1414-badge' : 
-                             file.type === 'enhanced' ? 'enhanced-badge' : '';
-            
-            return `
-                <div class="file-item">
-                    <div class="file-info">
-                        <div class="file-name">
-                            ${file.name}
-                            <span class="file-type-badge ${typeBadge}">${file.type.toUpperCase()}</span>
-                        </div>
-                        <div class="file-meta">
-                            ${file.description} • ${file.size} • ${file.records} records
-                        </div>
-                    </div>
-                    <div class="file-actions">
-                        <a href="${file.path}" class="btn btn-primary" download>
-                            📥 Download
-                        </a>
-                        <a href="${file.path}" class="btn btn-secondary" target="_blank">
-                            👁️ View
-                        </a>
-                    </div>
-                </div>
-            `;
-        }
-
-        function filterFiles(filter) {
-            currentFilter = filter;
-            
-            // Update filter tabs
-            document.querySelectorAll('.filter-tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            document.querySelector(`[data-filter="${filter}"]`).classList.add('active');
-            
-            // Filter files
-            if (filter === 'all') {
-                filteredFiles = allFiles;
-            } else {
-                filteredFiles = allFiles.filter(file => {
-                    if (filter === 'dd1414') return file.type === 'dd1414';
-                    if (filter === 'enhanced') return file.type === 'enhanced';
-                    if (filter === 'csv') return file.path.endsWith('.csv');
-                    if (filter === 'json') return file.path.endsWith('.json');
-                    return true;
-                });
+            if (filteredFiles.length === 0) {
+                tbody.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
             }
-            
-            // Re-categorize filtered files
-            categorizeFiles();
-            displayFiles();
+
+            noResults.style.display = 'none';
+
+            tbody.innerHTML = filteredFiles.map(file => `
+                <tr>
+                    <td>
+                        <div class="file-name">${file.name}</div>
+                        <div style="font-size: 0.8em; color: #6c757d; margin-top: 2px;">
+                            ${file.description}
+                        </div>
+                        ${file.records ? `<div style="font-size: 0.8em; color: #28a745; margin-top: 2px;">
+                            ${file.records.toLocaleString()} records
+                        </div>` : ''}
+                    </td>
+                    <td>
+                        <span class="file-type type-${file.type}">
+                            ${file.type.toUpperCase()}
+                        </span>
+                    </td>
+                    <td class="file-size">${file.size}</td>
+                    <td class="file-date">${file.date}</td>
+                    <td>
+                        <div class="file-actions">
+                            <a href="${file.path}" class="btn btn-primary" target="_blank">
+                                📥 Download
+                            </a>
+                            <a href="${file.path}" class="btn btn-secondary" target="_blank">
+                                👁️ View
+                            </a>
+                            ${file.type === 'csv' ? `
+                                <button class="btn btn-success" onclick="previewFile('${file.path}', '${file.type}')">
+                                    📊 Preview
+                                </button>
+                            ` : ''}
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
         }
 
-        function searchFiles(query) {
-            const searchTerm = query.toLowerCase();
-            
-            Object.entries(fileCategories).forEach(([key, category]) => {
-                category.files = category.files.filter(file => 
-                    file.name.toLowerCase().includes(searchTerm) ||
-                    file.description.toLowerCase().includes(searchTerm) ||
-                    file.type.toLowerCase().includes(searchTerm)
-                );
-            });
-            
-            displayFiles();
+        function previewFile(path, type) {
+            if (type === 'csv') {
+                // Open CSV in new tab for preview
+                window.open(path, '_blank');
+            }
         }
 
-        // Event listeners
-        document.getElementById('searchBox').addEventListener('input', (e) => {
-            searchFiles(e.target.value);
-        });
-
-        document.querySelectorAll('.filter-tab').forEach(tab => {
-            tab.addEventListener('click', (e) => {
-                filterFiles(e.target.dataset.filter);
-            });
-        });
-
-        // Load data on page load
-        loadAllFiles();
+        // Initialize when page loads
+        init();
     </script>
 </body>
 </html>
